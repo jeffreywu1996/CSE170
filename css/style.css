@@ -407,12 +407,13 @@ p {
 }
 
 .details-grid {
-    background: url(../images/banner-h.jpg) no-repeat 0px 0px;
+    background: url(../images/banner-h.jpg) /*no-repeat*/ 0px 0px;
     background-size: cover;
 	-webkit-background-size: cover;
 	 -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
+    margin-bottom: 100
 }
 .details-grid.gal {
     background: url(../images/banner-g.jpg) no-repeat 0px 0px;
@@ -497,6 +498,7 @@ p {
     border: 2px solid #fff;
         width: 28%;
     margin: 0 auto;
+    background: #020202;
 }
 .banner_search input[type="search"] {
   border: none;
@@ -517,6 +519,10 @@ background: #020202 url(../images/search.png) no-repeat 17px 8px;
   padding:0;
   border:none;
   outline:none;
+}
+.place_holder {
+  height: 100px;
+
 }
 /*-- banner --*/
 .banner-bottom  ul li {
@@ -2094,7 +2100,9 @@ ul.tabs-menu li a:hover{
 /*--tab-end--*/
 /*-- footer --*/
 .w3agile.footer {
- background: #1d1c1c;
+ /*--background: #1d1c1c;--*/
+ background-color: transparent;
+
 }
 .w3agile_footer_grid h3{
 	font-size:1.7em;
