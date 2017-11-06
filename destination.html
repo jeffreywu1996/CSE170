@@ -1,260 +1,138 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<title>Quacker: Travel Planning Made Easy</title>
-<!--font-awsome-css-->
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-<!--bootstrap-->
+	<title>Quacker: Travel Planning Made Easy</title>
+    <meta charset utf="8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--font-awsome-css-->
+	<link rel="stylesheet" href="css/font-awesome.min.css"> 
+	<!--bootstrap-->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<!--custom css-->
+	<!--custom css-->
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" href="css/swipebox.css">
-	<link href="css/drag.css" rel="stylesheet" type="text/css"/>
-<!--component-css-->
+	<!--component-css-->
 	<script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-<!--script-->
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/drag.js"></script>
-<!-- web-fonts -->
-  <link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!-- //web-fonts -->
-<!-- pop-up-box -->
-<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-	    <script>
-			$(document).ready(function() {
-				$('.popup-top-anim').magnificPopup({
-					type: 'inline',
-					fixedContentPos: false,
-					fixedBgPos: true,
-					overflowY: 'auto',
-					closeBtnInside: true,
-					preloader: false,
-					midClick: true,
-					removalDelay: 300,
-					mainClass: 'my-mfp-zoom-in'
-				});
-			});
-		</script>
-<!--//pop-up-box -->
-    </head>
+	<script src="js/bootstrap.min.js"></script>
+	<link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+
 <body>
-<div class="body-back">
-	<div class="masthead pdng-stn1">
-			</div>
+	<!--top icons bar-->
+	<div class="menu-notify">
+		<div class="profile-left">
+			<a href="javascript:history.back();"><i class="fa fa-chevron-left"></i></a>
 		</div>
-		<div class="phone-box wrap push" id="home">
-			<div class="menu-notify">
-				<div class="profile-left">
-					<a href="javascript:history.back();"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-				</div>
-				<div class="Profile-mid">
-					<h5 class="pro-link"><a href="index.html">Quacker</a></h5>
-				</div>
-				<div class="Profile-right">
-					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-</a>
-						<!-- modal -->
-					<div id="small-dialog" class="mfp-hide">
-						<div class="login-modal">
-							<div class="booking-info">
-							   <h3><a href="index.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>P</span>l<span>a</span>n</a></h3>
-							</div>
-							<ul id="columns">
-							    <li class="column" draggable="true"><header>A</header></li>
-							    <li class="column" draggable="true"><header>B</header></li>
-							    <li class="column" draggable="true"><header>C</header></li>
-							    <li class="column" draggable="true"><header>D</header></li>
-							    <li class="column" draggable="true"><header>E</header></li>
-						    </ul>
-							<p>Ready to travel?<a href="#small-dialog1" class="sign-in popup-top-anim"> Book now</a></p>
-						</div>
-					</div>
-					<!-- //modal -->
-					<!-- modal-two -->
-					<div id="small-dialog1" class="mfp-hide">
-						<div class="login-modal">
-							<div class="booking-info">
-							   <h3><a href="index.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>P</span>l<span>a</span>n</a></h3>
-							</div>
-							<div class="login-form signup-form">
-								<form action="#" method="post">
-									<input type="submit" value="Book Now">
-								</form>
-							</div>
-						</div>
-					</div>
-					<!-- //modal-two -->
+		<div class="Profile-mid">
+			<h5 class="pro-link"><a href="index.html">Quacker</a></h5>
+		</div>
+		<div class="Profile-right">
+			<a href="list.html"> <i class="fa fa-shopping-cart"></i></a>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!--//top icons bar-->
 
-				</div>
-				<div class="clearfix"></div>
-			</div>
-<!-- banner -->
-   <div class="details-grid gal">
-				<div class="details-shade ">
-						<div class="details-right">
-							<img src="images/logo.png" alt=" ">
-							<h3>Places in Japan</h3>
-							<h4>You’re going to like us.</h4>
-							<div class="place_holder">
-						</div>
-				</div>
-			</div>
+	<!-- banner -->
+	<div class="details-right">
+		<img src="images/logo.png" alt=" ">
+		<h3>Places in Japan</h3>
+	</div>
 
-
-						</div>
-	<!-- //banner -->
 	<!-- portfolio -->
 	<div id="portfolio" class="portfolio w3agile">
 		<div class="container">
-			<h3 class="w3ls-title">Destinations</h3>
+			<h3 class="w3ls-title">Popular Destinations</h3>
 			<div class="gallery_gds">
-				<!--ul class="simplefilter">
-					<li class="active" data-filter="all">All</li>
-					<li data-filter="1">Category 1</li>
-					<li data-filter="2">Category 2</li>
-					<li data-filter="3">Category 3</li>
-				</ul> -->
 				<div class="filtr-container">
-					<div class="col-md-4 filtr-item" data-category="1, 4" data-sort="Busy streets">
-						<div class="agileits-img">
-							<a href="images/d1.jpg" class="swipebox" title="<strong>Tokyo</strong>
-                <li>Food
-                <ul>Ramen</ul>
-                <ul>Sushi</ul>
-                </li>
-                <li>Landmarks
-                  <ul>Meiji Jingu Shrine</ul>
-                  <ul>Chidorigafuchi</ul>
-                  <ul>Akasaka Palace</ul>
-                  <ul>Tokyo Tower</ul>
-                  <ul>Shibuya Pedestrian Scramble</ul>
-                </li>">
-								<img class="img-responsive img-style row2" src="images/d1.jpg" alt=""  />
-								<button type="button" onclick="alert('Tokyo has been added to your list!')">Add Tokyo</button>
-							</a>
-						</div>
+
+					<div class="col-md-4 filtr-item" data-category="1, 4">
+						<img class="img-responsive img-style row2" src="images/d1.jpg" alt=""/>
+						<form action="Tokyo.html" method="get">
+					        <input type="submit" value="Tokyo"/>
+					    </form>
 					</div>
-					<div class="col-md-4 filtr-item" data-category="2, 3" data-sort="Luminous night">
-						<div class="agileits-img">
-							<a href="images/d2.jpg" class="swipebox" title="Kyoto">
-								<img src="images/d2.jpg" alt="" class="img-responsive img-style row2" />
-								<button type="button" onclick="alert('Kyoto has been added to your list!')">Add Kyoto</button>
-							</a>
-						</div>
+
+					<div class="col-md-4 filtr-item" data-category="2, 3">
+						<img class="img-responsive img-style row2" src="images/d2.jpg" alt=""/>
+						<form action="Tokyo.html" method="get">
+					        <input type="submit" value="Kyoto"/>
+					    </form>
 					</div>
-					<div class="col-md-4 filtr-item" data-category="1, 4" data-sort="City wonders">
-						<div class="agileits-img">
-							<a href="images/d3.jpg" class="swipebox" title="<strong>Osaka</strong>
-              <li>
-                <ul>Osaka Castle</ul>
-                <ul>Osaka Aquarium</ul>
-                <ul>Dōtonbori</ul>">
-								<img src="images/d3.jpg" alt="" class="img-responsive img-style row2" />
-								<button type="button" onclick="alert('Osaka has been added to your list!')">Add Osaka</button>
-							</a>
-						</div>
+
+					<div class="col-md-4 filtr-item" data-category="1, 4">
+						<img class="img-responsive img-style row2" src="images/d3.jpg" alt=""/>
+						<form action="Tokyo.html" method="get">
+					        <input type="submit" value="Osaka"/>
+					    </form>
 					</div>
-					<div class="col-md-4 filtr-item" data-category="3, 4" data-sort="Industrial site">
-						<div class="agileits-img">
-							<a href="images/d4.jpg" class="swipebox" title="Yokohama">
-								<img src="images/d4.jpg" alt="" class="img-responsive img-style row2" />
-								<button type="button" onclick="alert('Yokohama has been added to your list!')">Add Yokohama</button>
-							</a>
-						</div>
+
+					<div class="col-md-4 filtr-item" data-category="3, 4">
+						<img class="img-responsive img-style row2" src="images/d4.jpg" alt=""/>
+						<form action="Tokyo.html" method="get">
+					        <input type="submit" value="Yokohama"/>
+					    </form>
 					</div>
-					<div class="col-md-4 filtr-item" data-category="3" data-sort="In production">
-						<div class="agileits-img">
-							<a href="images/d5.jpg" class="swipebox" title="Kobe">
-								<img src="images/d5.jpg" alt="" class="img-responsive img-style row2" />
-								<button type="button" onclick="alert('Kobe has been added to your list!')">Add Kobe</button>
-							</a>
-						</div>
+
+					<div class="col-md-4 filtr-item" data-category="3">
+						<img class="img-responsive img-style row2" src="images/d5.jpg" alt=""/>
+						<form action="Tokyo.html" method="get">
+					        <input type="submit" value="Hokkaido"/>
+					    </form>
 					</div>
-					<div class="col-md-4 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
-						<div class="agileits-img">
-							<a href="images/d6.jpg" class="swipebox" title="Sapporo">
-								<img src="images/d6.jpg" alt="" class="img-responsive img-style row2" />
-								<button type="button" onclick="alert('Sapporo has been added to your list!')">Add Sapporo</button>
-							</a>
-						</div>
+
+					<div class="col-md-4 filtr-item" data-category="2, 4">
+						<img class="img-responsive img-style row2" src="images/d6.jpg" alt=""/>
+						<form action="Tokyo.html" method="get">
+					        <input type="submit" value="Sapporo"/>
+					    </form>
 					</div>
+
 				   <div class="clearfix"> </div>
 				</div>
 			</div>
 		</div>
 	</div>
-			</div>
+	<div class="place_holder"></div>
+    <!-- //banner -->
 
-			<div class="clearfix"> </div>
+	<!--/footer-->
+	<div class="w3agile agileinfo_copy_right">
+		<div class="agileinfo_copy_right_left">
+			<p>© 2017 Quacker. All rights reserved | Designed by <a href="http://courses.pgbovine.net/cogs120-cse170/">CDJL</a></p>
 		</div>
-		<div class="w3agile agileinfo_copy_right">
-			<div class="agileinfo_copy_right_left">
-				<p>© 2017 Quacker. All rights reserved | Designed by <a href="http://courses.pgbovine.net/cogs120-cse170/">CDJL</a></p>
-			</div>
-			<div class="agileinfo_copy_right_right">
-				<ul class="social">
-					<li><a class="social-linkedin" href="#">
-						<i></i>
-						<div class="tooltip"><span>Facebook</span></div>
-						</a></li>
-					<li><a class="social-twitter" href="#">
-						<i></i>
-						<div class="tooltip"><span>Twitter</span></div>
-						</a></li>
-					<li><a class="social-google" href="#">
-						<i></i>
-						<div class="tooltip"><span>Google+</span></div>
-						</a></li>
-					<li><a class="social-facebook" href="#">
-						<i></i>
-						<div class="tooltip"><span>Pinterest</span></div>
-						</a></li>
-					<li><a class="social-instagram" href="#">
-						<i></i>
-						<div class="tooltip"><span>Instagram</span></div>
-						</a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
+		
+		<div class="agileinfo_copy_right_right">
+			<ul class="social">
+				<li><a class="social-linkedin" href="#">
+					<i></i>
+					<div class="tooltip"><span>Facebook</span></div>
+					</a></li>
+				<li><a class="social-twitter" href="#">
+					<i></i>
+					<div class="tooltip"><span>Twitter</span></div>
+					</a></li>
+				<li><a class="social-google" href="#">
+					<i></i>
+					<div class="tooltip"><span>Google+</span></div>
+					</a></li>
+				<li><a class="social-facebook" href="#">
+					<i></i>
+					<div class="tooltip"><span>Pinterest</span></div>
+					</a></li>
+				<li><a class="social-instagram" href="#">
+					<i></i>
+					<div class="tooltip"><span>Instagram</span></div>
+					</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
 	</div>
 	<!--/footer-->
-	</div>
-</div>
-	<script src="jS/jquery.filterizr.js"></script>
-	<script src="js/controls.js"></script>
-	<!-- Kick off Filterizr -->
-	<script type="text/javascript">
-		$(function() {
-			//Initialize filterizr with default options
-			$('.filtr-container').filterizr();
-		});
-	</script>
-	<!-- swipe box js -->
-	<script src="js/jquery.swipebox.min.js"></script>
-	<script type="text/javascript">
-			jQuery(function($) {
-				$(".swipebox").swipebox();
-			});
-	</script>
-	<!-- //swipe box js -->
-		<script src="js/jquery.adipoli.min.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(function(){
-			$('.row2').adipoli({
-				'startEffect' : 'overlay',
-				'hoverEffect' : 'sliceDown'
-			});
-		});
-
-	</script>
-
 <script src="js/jquery.nicescroll.js"></script>
 <script src="js/scripts.js"></script>
-<!--<button type="button" onclick="alert('Hello world!')">Click Me!</button>
-
-	-->
 </body>
 </html>

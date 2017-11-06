@@ -416,7 +416,7 @@ p {
 	 -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
-    margin-bottom: 100
+    margin-bottom: 100;
 }
 .details-grid.gal {
     background: url(../images/banner-g.jpg) no-repeat 0px 0px;
@@ -510,7 +510,7 @@ p {
     font-size: 14px;
     color: #777;
     background: none;
-    width: 89%;
+    width: 80%;
     background: #fff;
 }
 .banner_search form input[type="submit"]{

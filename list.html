@@ -34,6 +34,11 @@
     $( "#sortable" ).disableSelection();
   } );
   </script>
+  <script>
+  function printPage() {
+      window.print();
+  }
+  </script>
 </head>
 
 <body>
@@ -56,6 +61,7 @@
   <div class="details-right">
     <img src="images/logo.png" alt=" ">
   </div>
+  
   <div class="draggable_list">
     <!--draggable list-->
     <p>Current List of Destinations</p>
@@ -73,7 +79,7 @@
     <!--print button-->
     <form action="index.html" method="get">
         Ready to travel?
-        <input type="submit" value="Print Now"/>
+        <input type="button" value="Print Now" onclick="printPage()"/>
     </form>
     <!--//print button-->
   </div>
