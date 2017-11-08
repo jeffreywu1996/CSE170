@@ -17,8 +17,6 @@
 	<!--component-css-->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -98,13 +96,57 @@
 	<!--passing data along from city page-->
 	<div class = "text-center">
 		<form action="list.html" method="get">
-			<input type="submit" value="Add to Cart"/>
-			<script>
-				localStorage.item1 = "Tokyo";
-			</script>
+			<input type="submit" value="Add to Cart" id="add_tokyo"/>
 		</form>
 	</div>
-	<!--passing data along from city page-->
+
+	<script>
+        var list;
+        console.log("loading page");
+        if (localStorage.JSON === undefined) {
+            console.log("JSON undefined");
+            list = [];
+        } else {
+            list = JSON.parse(localStorage.JSON);
+        }
+        document.getElementById("add_tokyo").onclick = function () {appendList("Tokyo");
+        };
+        // document.getElementById("add_tokyo").onclick = function(){
+        //     console.log("Tokyo");
+        //     list.push("Tokyo");
+        // };
+        // document.getElementById("add_kyoto").onclick = function(){
+        //     console.log("Kyoto");
+        //     list.push("Kyoto");
+        // };
+        // document.getElementById("add_osaka").onclick = function(){
+        //     console.log("Osaka");
+        //     list.push("Osaka");
+        // };
+        // document.getElementById("add_hokkaido").onclick = function(){
+        //     console.log("Hokkaido");
+        //     list.push("Hokkaido");
+        // };
+        // document.getElementById("add_sapporo").onclick = function(){
+        //     console.log("Sapporo");
+        //     list.push("Sapporo");
+        // };
+        function appendList(city) {
+            console.log(city);
+            var list;
+            console.log("calling appendList func");
+            if (localStorage.JSON === undefined) {
+                console.log("JSON undefined");
+                list = [];
+            } else {
+                list = JSON.parse(localStorage.JSON);
+            }
+            list.push(city);
+            localStorage.JSON = JSON.stringify(list);
+        }
+    </script>
+    <!--passing data along from city page-->
+
 	<div class="place_holder"></div>
 
 	<!--/footer-->
@@ -140,7 +182,5 @@
 		<div class="clearfix"> </div>
 	</div>
 	<!--/footer-->
-<script src="js/jquery.nicescroll.js"></script>
-<script src="js/scripts.js"></script>
 </body>
 </html>
