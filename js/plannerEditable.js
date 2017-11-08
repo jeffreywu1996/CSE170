@@ -52,6 +52,15 @@
 		filter: '.js-remove',
 		onFilter: function (evt) {
 			evt.item.parentNode.removeChild(evt.item);
+            
+            // my code remove from localstorage
+            var str = evt.item.innerText
+            str = str.slice(0, -1);
+
+            var list = JSON.parse(localStorage.JSON);
+            var idx = list.indexOf(str);
+            list.splice(idx, 1);
+            localStorage.JSON = JSON.stringify(list);
 		}
 	});
 

@@ -86,9 +86,19 @@
         // document.getElementById("id5").innerHTML = localStorage.cart5;
         for(var i = 0; i < list.length; i++){
             $('#editable').append(
-                '<li id="id'+ i +'">' + list[i] + '<i class="js-remove">✖</i></li>'
-                )
+                '<li id="id'+ i +'">' + list[i] + '<i class="js-remove" id="' + list[i] +'">✖</i></li>'
+            )
         }
+
+        $('#id1').onclick = function(){
+            console.log("delsssste");
+            console.log(this.id);
+        };
+
+        $('.js-remove').onclick = function(){
+            console.log("delte");
+            console.log(this.id);
+        };
     </script>
 
     <!--print button-->
@@ -104,8 +114,8 @@
     <!--print button function-->
     <script>
         function printPage() {
-          window.print();
-          }
+            window.print();
+        }
     </script>
 
     <!--/footer-->

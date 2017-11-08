@@ -148,7 +148,7 @@
 	<!--passing data along from city page-->
 	<div class = "text-center">
 		<form action="list.html" method="get">
-			<input type="submit" value="Add to Cart" id="add_tokyo"/>
+			<input type="submit" value="Add to Cart" id="add_hokkaido"/>
 		</form>
 	</div>
 
@@ -161,7 +161,7 @@
 		} else {
 			list = JSON.parse(localStorage.JSON);
 		}
-			document.getElementById("add_tokyo").onclick = function () {appendList("Tokyo");
+			document.getElementById("add_hokkaido").onclick = function () {appendList("Hokkaido");
 		};
         // document.getElementById("add_tokyo").onclick = function(){
         //     console.log("Tokyo");

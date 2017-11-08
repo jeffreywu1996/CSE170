@@ -37,8 +37,8 @@
 
 	<div class="container">
 		<div class="jumbotron">
-			<h1>Tokyo</h1>
-			<p>Description of tokyo blah blah blah</p>
+			<h1>Kyoto</h1>
+			<p>Kyoto, once the capital of Japan, is a city on the island of Honshu. It's famous for its numerous classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines and traditional wooden houses. It’s also known for formal traditions such as kaiseki dining, consisting of multiple courses of precise dishes, and geisha, female entertainers often found in the Gion district.</p>
 		</div>
 
 		<div class="col-4">
@@ -148,7 +148,7 @@
 	<!--passing data along from city page-->
 	<div class = "text-center">
 		<form action="list.html" method="get">
-			<input type="submit" value="Add to Cart" id="add_tokyo"/>
+			<input type="submit" value="Add to Cart" id="add_kyoto"/>
 		</form>
 	</div>
 
@@ -161,7 +161,7 @@
 		} else {
 			list = JSON.parse(localStorage.JSON);
 		}
-			document.getElementById("add_tokyo").onclick = function () {appendList("Tokyo");
+			document.getElementById("add_kyoto").onclick = function () {appendList("Kyoto");
 		};
         // document.getElementById("add_tokyo").onclick = function(){
         //     console.log("Tokyo");
