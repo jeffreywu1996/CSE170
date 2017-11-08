@@ -59,6 +59,9 @@ body {
 .place_holder {
   height: 100px;
 }
+.spacer {
+  height: 10px;
+}
 
 /*index or home page*/
 .banner_search {
@@ -99,6 +102,7 @@ h3.w3ls-title {
 }
 .filtr-item {
   padding: 1em;
+  text-align: center;
 }
 
 /*list or cart page*/
