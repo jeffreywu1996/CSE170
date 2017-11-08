@@ -177,6 +177,7 @@
 .menu-notify {
   padding: 12px 0;
   background:#a5adb0!important;
+  /*position: fixed;*/
 }
 .agileinfo_copy_right{
 	background: #a5adb0;
