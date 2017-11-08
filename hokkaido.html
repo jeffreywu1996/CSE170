@@ -193,8 +193,13 @@
         	} else {
         		list = JSON.parse(localStorage.JSON);
         	}
-        	list.push(city);
-        	localStorage.JSON = JSON.stringify(list);
+
+            if (list.indexOf(city) != -1) {
+                alert("City already added to cart!");
+            } else {
+                list.push(city);
+                localStorage.JSON = JSON.stringify(list);
+            }
         }
     </script>
     <!--passing data along from city page-->
