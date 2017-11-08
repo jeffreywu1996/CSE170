@@ -46,102 +46,51 @@
 			<h3 class="w3ls-title">Popular Destinations</h3>
 			<div class="gallery_gds">
 				<div class="filtr-container">
+                    <div class="col-md-4 filtr-item" data-category="1, 4">
+                        <img class="img-responsive img-style row2" src="images/d1.jpg" alt=""/>
+                        <form action="tokyo.html">
+                            <input type="submit" value="Tokyo"/>
+                        </form>
+                    </div>
 
-					<div class="col-md-4 filtr-item" data-category="1, 4">
-						<img class="img-responsive img-style row2" src="images/d1.jpg" alt=""/>
-						<form action="tokyo.html" method="get">
-                            <button type="button" class="btn btn-outline-primary" id="add_tokyo">Add Tokyo</button> 
-					    </form>
-					</div>
+                    <div class="col-md-4 filtr-item" data-category="2, 3">
+                        <img class="img-responsive img-style row2" src="images/d2.jpg" alt=""/>
+                        <form action="tokyo.html">
+                            <input type="submit" value="Kyoto"/>
+                        </form>
+                    </div>
 
-					<div class="col-md-4 filtr-item" data-category="2, 3">
-						<img class="img-responsive img-style row2" src="images/d2.jpg" alt=""/>
-						<form action="tokyo.html" method="get">
-                            <button type="button" class="btn btn-outline-primary" id="add_kyoto">Add Kyoto</button>
-					    </form>
-					</div>
+                    <div class="col-md-4 filtr-item" data-category="1, 4">
+                        <img class="img-responsive img-style row2" src="images/d3.jpg" alt=""/>
+                        <form action="tokyo.html">
+                            <input type="submit" value="Osaka"/>
+                        </form>
+                    </div>
 
-					<div class="col-md-4 filtr-item" data-category="1, 4">
-						<img class="img-responsive img-style row2" src="images/d3.jpg" alt=""/>
-						<form action="tokyo.html" method="get">
-                            <button type="button" class="btn btn-outline-primary" id="add_osaka">Add Osaka</button>
-					    </form>
-					</div>
+                    <div class="col-md-4 filtr-item" data-category="3, 4">
+                        <img class="img-responsive img-style row2" src="images/d4.jpg" alt=""/>
+                        <form action="tokyo.html">
+                            <input type="submit" value="Yokohama"/>
+                        </form>
+                    </div>
 
-					<div class="col-md-4 filtr-item" data-category="3, 4">
-						<img class="img-responsive img-style row2" src="images/d4.jpg" alt=""/>
-						<form action="tokyo.html" method="get">
-                            <button type="button" class="btn btn-outline-primary" id="add_yokohama">Add Yokohama</button>
-					    </form>
-					</div>
+                    <div class="col-md-4 filtr-item" data-category="3">
+                        <img class="img-responsive img-style row2" src="images/d5.jpg" alt=""/>
+                        <form action="tokyo.html"">
+                            <input type="submit" value="Hokkaido"/>
+                        </form>
+                    </div>
 
-					<div class="col-md-4 filtr-item" data-category="3">
-						<img class="img-responsive img-style row2" src="images/d5.jpg" alt=""/>
-						<form action="tokyo.html" method="get">
-                            <button type="button" class="btn btn-outline-primary" id="add_hokkaido">Add Hokkaido</button>
-					    </form>
-					</div>
-
-					<div class="col-md-4 filtr-item" data-category="2, 4">
-						<img class="img-responsive img-style row2" src="images/d6.jpg" alt=""/>
-						<form action="tokyo.html" method="get">
-                            <button type="button" class="btn btn-outline-primary" id="add_sapporo">Add Sapporo</button>
-					    </form>
-					</div>
+                    <div class="col-md-4 filtr-item" data-category="2, 4">
+                        <img class="img-responsive img-style row2" src="images/d6.jpg" alt=""/>
+                        <form action="tokyo.html">
+                            <input type="submit" value="Sapporo"/>
+                        </form>
+                    </div>
 
 		    <div class="clearfix"> </div>
 		</div>
 	</div>
-
-    <script>
-        var list;
-        console.log("loading page");
-        if (localStorage.JSON === undefined) {
-            console.log("JSON undefined");
-            list = [];
-        } else {
-            list = JSON.parse(localStorage.JSON);
-        }
-
-
-        document.getElementById("add_tokyo").onclick = function () {appendList("Tokyo");
-        };
-        // document.getElementById("add_tokyo").onclick = function(){
-        //     console.log("Tokyo");
-        //     list.push("Tokyo");
-        // };
-        // document.getElementById("add_kyoto").onclick = function(){
-        //     console.log("Kyoto");
-        //     list.push("Kyoto");
-        // };
-        // document.getElementById("add_osaka").onclick = function(){
-        //     console.log("Osaka");
-        //     list.push("Osaka");
-        // };
-        // document.getElementById("add_hokkaido").onclick = function(){
-        //     console.log("Hokkaido");
-        //     list.push("Hokkaido");
-        // };
-        // document.getElementById("add_sapporo").onclick = function(){
-        //     console.log("Sapporo");
-        //     list.push("Sapporo");
-        // };
-
-        function appendList(city) {
-            console.log(city);
-            var list;
-            console.log("calling appendList func");
-            if (localStorage.JSON === undefined) {
-                console.log("JSON undefined");
-                list = [];
-            } else {
-                list = JSON.parse(localStorage.JSON);
-            }
-            list.push(city);
-            localStorage.JSON = JSON.stringify(list);
-        }
-
-    </script>
 
 	<div class="place_holder"></div>
     <!-- //banner -->
