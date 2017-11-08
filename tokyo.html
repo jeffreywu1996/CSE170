@@ -2,30 +2,23 @@
 
 <html lang="en">
 <head>
-<title>Quacker: Travel Planning Made Easy</title>
+	<title>Quacker: Travel Planning Made Easy</title>
     <meta charset utf="8">
-    <!-- This keeps site mobile friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!-- font-awsome-css -->
-    <link rel="stylesheet" href="css/font-awesome.min.css"> 
-    <!-- bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <!-- custom css -->
-    <!--<link href="css/style.css" rel="stylesheet" type="text/css"/>-->
-    <link href="css/plannerEditable.css" rel="stylesheet" type="text/css"/>
-    <link href="css/tokyo.css" rel="stylesheet" type="text/css">    
-    <!-- component-css -->
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- bootstrap 4.0 -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> -->
+	<!--font-awsome-css-->
+	<link rel="stylesheet" href="css/font-awesome.min.css"> 
+	<!--bootstrap-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!--custom css-->
+	<!--<link href="css/style.css" rel="stylesheet" type="text/css"/>-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">	
+	<!--component-css-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -34,14 +27,15 @@
 		<div class="profile-left">
 			<a href="javascript:history.back();"><i class="fa fa-chevron-left"></i></a>
 		</div>
-		<div class="Profile-mid">
+		<div class="profile-mid">
 			<a href="index.html"> <i class="fa fa-home"></i></a>
 		</div>
-		<div class="Profile-right">
+		<div class="profile-right">
 			<a href="list.html"> <i class="fa fa-shopping-cart"></i></a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
+	<!--//top icons bar-->
 
 	<div class="container">
 		<div class="jumbotron">
@@ -101,6 +95,18 @@
 		</div>
 	</div>
 
+	<!--passing data along from city page-->
+	<div class = "text-center">
+		<form action="list.html" method="get">
+			<input type="submit" value="Add to Cart"/>
+			<script>
+				localStorage.item1 = "Tokyo";
+			</script>
+		</form>
+	</div>
+	<!--passing data along from city page-->
+	<div class="place_holder"></div>
+
 	<!--/footer-->
 	<div class="w3agile agileinfo_copy_right">
 		<div class="agileinfo_copy_right_left">
@@ -133,6 +139,8 @@
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-	<!-- <script src="js/scripts.js"></script> -->
+	<!--/footer-->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

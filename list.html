@@ -1,58 +1,66 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <title>Quacker: Travel Planning Made Easy</title>
-    <meta charset utf="8">
-    <!-- This keeps site mobile friendly -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!--font-awsome-css-->
-    <link rel="stylesheet" href="css/font-awesome.min.css"> 
-    <!--bootstrap-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <!--custom css-->
-    <!--<link href="css/style.css" rel="stylesheet" type="text/css"/>-->
-    <link href="css/plannerEditable.css" rel="stylesheet" type="text/css"/>
-    <link href="css/tokyo.css" rel="stylesheet" type="text/css">    
-    <!--component-css-->
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <title>Quacker: Travel Planning Made Easy</title>
+  <meta charset utf="8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--font-awsome-css-->
+  <link rel="stylesheet" href="css/font-awesome.min.css"> 
+  <!--bootstrap-->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!--custom css-->
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/plannerEditable.css" rel="stylesheet" type="text/css"/>
+  <!--component-css-->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--draggable stuff-->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <!--print button function-->
+  <script>
+  function printPage() {
+      window.print();
+  }
+  </script>
 </head>
 
 <body>
-    <!--top icons bar-->
-    <div class="menu-notify">
-        <div class="profile-left">
-            <a href="javascript:history.back();"><i class="fa fa-chevron-left"></i></a>
-        </div>
-        <div class="Profile-mid">
-            <a href="index.html"> <i class="fa fa-home"></i></a>
-        </div>
-        <div class="Profile-right">
-            <a href="list.html"> <i class="fa fa-shopping-cart"></i></a>
-        </div>
-        <div class="clearfix"></div>
+  <!--top icons bar-->
+  <div class="menu-notify">
+    <div class="profile-left">
+      <a href="javascript:history.back();"><i class="fa fa-chevron-left"></i></a>
+    </div>
+    <div class="profile-mid">
+      <a href="index.html"> <i class="fa fa-home"></i></a>
+    </div>
+    <div class="profile-right">
+      <a href="list.html"> <i class="fa fa-shopping-cart"></i></a>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <!--//top icons bar-->
+
+  <!-- banner -->
+  <div class="details-right">
+    <img src="images/logo.png" alt=" ">
+  </div>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Planner</h1>
+      <p>Drag and drop schedules below to plan your trip!</p>
     </div>
 
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Planner</h1>
-            <p>Drag and drop schedules below to plan your trip!</p>
-        </div>
-
-        <a name="e"></a>
-        <!-- <div class="container" style="margin-top: 100px"> -->
-            <!-- <div id="filter" style="margin-left: 200px"> -->
-                <div data-force="5" class="layer title title_xl">Current List of Destinations</div>
+    <!--draggable list-->
+    <a name="e"></a>
+    <!-- <div class="container" style="margin-top: 100px"> -->
+        <!-- <div id="filter" style="margin-left: 200px"> -->
+          <div data-force="5" class="layer title title_xl">Current List of Destinations</div>
 
                 <div style="margin-top: -8px; margin-left: 10px" class="block__list block__list_words">
                     <ul id="editable">
@@ -65,7 +73,14 @@
                     <!-- <button id="addUser">Add</button> -->
                 </div>
             <!-- </div> -->
-        <!-- </div> -->
+    <!-- </div> -->
+    <!--//draggable list-->
+    
+    <!--passing data along from city page-->
+    <script>
+        document.getElementById("id1").innerHTML = localStorage.item1;
+    </script>
+    <!--passing data along from city page-->
 
         <button type="button" class="btn btn-outline-primary btn-lg" id="add_tokyo">Add city</button>
 
@@ -103,42 +118,54 @@
             </form>
         </div>
     <div class="place_holder"></div>
+    
+    <!--print button-->
+    <div class = "text-center">
+      <form action="index.html" method="get">
+        <span id="ready_to_travel">Ready to travel?</span>
+          <button type="button" class="btn btn-outline-primary btn-lg" id="print_btn" onclick="printPage()">Print Now</button>
+      </form>
     </div>
+    <!--//print button-->
+    
+    <div class="place_holder"></div>
+    <!-- //banner -->
+  </div>
 
-    <!--/footer-->
-    <div class="w3agile agileinfo_copy_right">
-        <div class="agileinfo_copy_right_left">
-            <p>© 2017 Quacker. All rights reserved | Designed by <a href="http://courses.pgbovine.net/cogs120-cse170/">CDJL</a></p>
-        </div>
-        
-        <div class="agileinfo_copy_right_right">
-            <ul class="social">
-                <li><a class="social-linkedin" href="#">
-                    <i></i>
-                    <div class="tooltip"><span>Facebook</span></div>
-                    </a></li>
-                <li><a class="social-twitter" href="#">
-                    <i></i>
-                    <div class="tooltip"><span>Twitter</span></div>
-                    </a></li>
-                <li><a class="social-google" href="#">
-                    <i></i>
-                    <div class="tooltip"><span>Google+</span></div>
-                    </a></li>
-                <li><a class="social-facebook" href="#">
-                    <i></i>
-                    <div class="tooltip"><span>Pinterest</span></div>
-                    </a></li>
-                <li><a class="social-instagram" href="#">
-                    <i></i>
-                    <div class="tooltip"><span>Instagram</span></div>
-                    </a></li>
-            </ul>
-        </div>
-        <div class="clearfix"> </div>
+  <!--/footer-->
+  <div class="w3agile agileinfo_copy_right">
+    <div class="agileinfo_copy_right_left">
+      <p>© 2017 Quacker. All rights reserved | Designed by <a href="http://courses.pgbovine.net/cogs120-cse170/">CDJL</a></p>
     </div>
-
-    <script src="https://rubaxa.github.io/Sortable/Sortable.js"></script>
-    <script src="js/plannerEditable.js"></script>
+    
+    <div class="agileinfo_copy_right_right">
+      <ul class="social">
+        <li><a class="social-linkedin" href="#">
+          <i></i>
+          <div class="tooltip"><span>Facebook</span></div>
+          </a></li>
+        <li><a class="social-twitter" href="#">
+          <i></i>
+          <div class="tooltip"><span>Twitter</span></div>
+          </a></li>
+        <li><a class="social-google" href="#">
+          <i></i>
+          <div class="tooltip"><span>Google+</span></div>
+          </a></li>
+        <li><a class="social-facebook" href="#">
+          <i></i>
+          <div class="tooltip"><span>Pinterest</span></div>
+          </a></li>
+        <li><a class="social-instagram" href="#">
+          <i></i>
+          <div class="tooltip"><span>Instagram</span></div>
+          </a></li>
+      </ul>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+  <!--/footer-->
+<script src="https://rubaxa.github.io/Sortable/Sortable.js"></script>
+<script src="js/plannerEditable.js"></script>
 </body>
 </html>
