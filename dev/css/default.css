@@ -33,6 +33,7 @@ html {
 
 
 
+
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .clearfix:before,
@@ -47,7 +48,8 @@ html {
 
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #b3b9bf;
+    /*color: #b3b9bf;*/
+    color: #2c3e63;
     background: #f9f9f9;
 }
 
@@ -60,6 +62,7 @@ a:hover,
 a:active {
     color: #333;
 }
+
 
 
 
@@ -80,6 +83,7 @@ a:active {
     margin: 0;
     font-weight: 300;
 }
+
 
 
 
@@ -148,6 +152,7 @@ a:active {
 .codrops-icon-about:before {
     content: "\e003";
 }
+
 
 
 
