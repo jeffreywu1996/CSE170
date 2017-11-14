@@ -1,6 +1,7 @@
 /* General Demo Style */
 
-@import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/*@import url(//fonts.googleapis.com/css?family=Lato:300,400,700);*/
 
 @font-face {
     font-family: 'codropsicons';
@@ -27,6 +28,7 @@ html {
     padding: 0;
     margin: 0;
 }
+
 
 
 
@@ -62,6 +64,7 @@ a:active {
 
 
 
+
 /* Header Style */
 
 .container>header {
@@ -77,6 +80,7 @@ a:active {
     margin: 0;
     font-weight: 300;
 }
+
 
 
 
@@ -144,6 +148,7 @@ a:active {
 .codrops-icon-about:before {
     content: "\e003";
 }
+
 
 
 
