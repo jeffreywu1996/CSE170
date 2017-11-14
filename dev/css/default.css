@@ -1,6 +1,6 @@
 /* General Demo Style */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
 
 @font-face {
     font-family: 'codropsicons';
@@ -27,6 +27,8 @@ html {
     padding: 0;
     margin: 0;
 }
+
+
 
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -58,6 +60,8 @@ a:active {
 }
 
 
+
+
 /* Header Style */
 
 .container>header {
@@ -73,6 +77,8 @@ a:active {
     margin: 0;
     font-weight: 300;
 }
+
+
 
 
 /* To Navigation Style */
@@ -138,6 +144,8 @@ a:active {
 .codrops-icon-about:before {
     content: "\e003";
 }
+
+
 
 
 /* Demo Buttons Style */
