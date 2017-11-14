@@ -108,6 +108,10 @@
 
 
 
+
+
+
+
 /*all pages*/
 
 body {
@@ -137,10 +141,21 @@ body {
     margin-bottom: 20px;
 }
 
+.banner-image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .input-group {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+
+
+
 
 
 
@@ -210,6 +225,10 @@ body {
     margin: 0 auto;
     padding: 0;
 }
+
+
+
+
 
 
 
@@ -331,12 +350,20 @@ h3.w3ls-title {
 
 
 
+
+
+
+
 /*list or cart page*/
 
 .print_button {
     text-align: center;
     font-size: 20px;
 }
+
+
+
+
 
 
 
@@ -389,6 +416,10 @@ h3.w3ls-title {
 .category-title {
     font-size: 15pt;
 }
+
+
+
+
 
 
 
@@ -587,6 +618,10 @@ ul.social li {
     width: 20px;
     height: 16px;
 }
+
+
+
+
 
 
 
