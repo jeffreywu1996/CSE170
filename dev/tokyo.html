@@ -55,7 +55,7 @@
             <center>
                 <div class="text-center" style="padding-top: 20px; padding-bottom: 10px">
                     <form action="list.html" method="get">
-                        <input type="submit" value="Add to Cart" id="add_tokyo" />
+                        <input type="submit" value="Add to Cart" id="add_tokyo1" />
                     </form>
                 </div>
             </center>
@@ -299,7 +299,7 @@
     <!--passing data along from city page-->
     <div class="text-center" style="padding-top: 20px; padding-bottom: 30px">
         <form action="list.html" method="get">
-            <input type="submit" value="Add to Cart" id="add_tokyo" />
+            <input type="submit" value="Add to Cart" id="add_tokyo2" />
         </form>
     </div>
 
@@ -313,7 +313,11 @@
         list = JSON.parse(localStorage.JSON);
     }
 
-    document.getElementById("add_tokyo").onclick = function() {
+    document.getElementById("add_tokyo1").onclick = function() {
+        appendList("Tokyo");
+    };
+
+    document.getElementById("add_tokyo2").onclick = function() {
         appendList("Tokyo");
     };
     // document.getElementById("add_tokyo").onclick = function(){
