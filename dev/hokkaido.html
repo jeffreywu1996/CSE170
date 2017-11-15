@@ -12,8 +12,11 @@
 	<!--bootstrap-->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<!--custom css-->
-	<!--<link href="css/style.css" rel="stylesheet" type="text/css"/>-->
-	<link href="css/style.css" rel="stylesheet" type="text/css">	
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link href="css/ply.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />	
 	<!--component-css-->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -37,16 +40,20 @@
 
 	<div class="container">
 		<div class="jumbotron">
-			<h1>Hokkaido</h1>
+			<center><img src="https://www.japantravel-centre.com/wp-content/uploads/2016/02/hokkaido_shiba_zakura_estival.jpg" height = "360" width="540"></center>
+			<center><h1>Hokkaido</h1></center>
 			<p>Hokkaido, the northernmost of Japan’s main islands, is known for its volcanoes, natural hot springs (onsen) and ski areas. Rugged Daisetsuzan National Park is home to steaming, volcanic Mount Asahi. Shikotsu-Tōya National Park contains caldera lakes, geothermal springs and a Mount Fuji look-alike, Mount Yōtei. Popular ski resorts include Rusutsu, Furano and Niseko.</p>
 		</div>
 
-		<div class="col-4">
-			<i class="fa fa-cutlery fa-2x fa-fw" aria-hidden="true"></i>
-			<a href="#demo1" class="btn btn-info" data-toggle="collapse">Food</a>
-			<div id="demo1" class="collapse">
-				<ul>
-										<li>Okonomiyaki</li>
+		<ul class="nav nav-pills">
+  			<li class="active"><a data-toggle="pill" href="#food">Food</a></li>
+ 			<li><a data-toggle="pill" href="#landmarks">Landmarks</a></li>
+		</ul>
+
+		<div class="tab-content">
+  			<div id="food" class="tab-pane fade in active">
+  				<ul>
+  					<li>Okonomiyaki</li>
 					<img src="https://www.justonecookbook.com/wp-content/uploads/2011/03/Okonomiyaki-Teppan-600x600.jpg" height="300" width="300">
 					<div class="place_holder"></div>
 					<li>Chankonabe</li>
@@ -72,24 +79,12 @@
 					<div class="place_holder"></div>
 					<li>Soba</li>
 					<img src="http://www.whats4eats.com/files/pastas-zaru-soba-flickr-kalleboo-Karl-Baron-9091388271-4x3.jpg" height="300" width="400">
-					<div class="place_holder"></div>
-				<!--<a href="#demo" class="btn btn-info" data-toggle="collapse">Sashimi</a>
-					<div id="demo" class="collapse">
-						<img src="https://www.bbcgoodfood.com/sites/default/files/glossary/sashimi-resized.jpg" height="50" width="50">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</div>-->
-				</ul>
-			</div>
-		</div>
+  				</ul>
+  			</div>
 
-		<div class="col-4">
-			<i class="fa fa-university fa-2x fa-fw" aria-hidden="true"></i>
-			<a href="#demo2" class="btn btn-info" data-toggle="collapse">Landmarks</a>
-			<div id="demo2" class="collapse">
+  			<div id="landmarks" class="tab-pane fade">
 				<ul>
-										<li>Kitchen Town</li>
+					<li>Kitchen Town</li>
 					<img src="https://cnz.to/wp-content/uploads/2010/05/japanhighlights-5.jpg" height="253" width="380">
 					<div class="place_holder"></div>
 					<li>Hachiko</li>
@@ -118,10 +113,9 @@
 					<div class="place_holder"></div>
 					<li>Hozomon</li>
 					<img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Hozomon_sensoji.jpg" height="384" width="512">
-					<div class="place_holder"></div>
 				</ul>
 			</div>
-		</div>
+  		</div>
 		
 	<!--<div class="media">
 			<div class="media-left">

@@ -12,8 +12,11 @@
 	<!--bootstrap-->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<!--custom css-->
-	<!--<link href="css/style.css" rel="stylesheet" type="text/css"/>-->
-	<link href="css/style.css" rel="stylesheet" type="text/css">	
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link href="css/ply.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
 	<!--component-css-->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -37,17 +40,21 @@
 
 	<div class="container">
 		<div class="jumbotron">
-			<h1>Yokohama</h1>
+			<center><img src="https://lonelyplanetimages.imgix.net/a/g/hi/t/fa6b8fcce2932f0b7b04d383035192ff-yokohama.jpg?sharp=10&vib=20&w=1200" height="320" width="480"></center>
+			<center><h1>Yokohama</h1></center>
 			<p>Yokohama (Japanese: 横浜 Hepburn: Yokohama, pronounced [jokoꜜhama] (About this sound listen)) is the second largest city in Japan by population, after Tokyo, and the most populous municipality of Japan. It is the capital city of Kanagawa Prefecture. It lies on Tokyo Bay, south of Tokyo, in the Kantō region of the main island of Honshu. It is a major commercial hub of the Greater Tokyo Area.
-Yokohama's population of 3.7 million makes it Japan's largest city after the Special Wards of Tokyo. Yokohama developed rapidly as Japan's prominent port city following the end of Japan's relative isolation in the mid-19th century, and is today one of its major ports along with Kobe, Osaka, Nagoya, Hakata, Tokyo, and Chiba.</p>
+			Yokohama's population of 3.7 million makes it Japan's largest city after the Special Wards of Tokyo. Yokohama developed rapidly as Japan's prominent port city following the end of Japan's relative isolation in the mid-19th century, and is today one of its major ports along with Kobe, Osaka, Nagoya, Hakata, Tokyo, and Chiba.</p>
 		</div>
 
-		<div class="col-4">
-			<i class="fa fa-cutlery fa-2x fa-fw" aria-hidden="true"></i>
-			<a href="#demo1" class="btn btn-info" data-toggle="collapse">Food</a>
-			<div id="demo1" class="collapse">
-				<ul>
-										<li>Tsukudani</li>
+		<ul class="nav nav-pills">
+  			<li class="active"><a data-toggle="pill" href="#food">Food</a></li>
+ 			<li><a data-toggle="pill" href="#landmarks">Landmarks</a></li>
+		</ul>
+
+		<div class="tab-content">
+  			<div id="food" class="tab-pane fade in active">
+  				<ul>
+  					<li>Tsukudani</li>
 					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Tsukudaniphoto.jpg/1200px-Tsukudaniphoto.jpg" height="200" width="400">
 					<div class="place_holder"></div>
 					<li>Sushi</li>
@@ -65,7 +72,7 @@ Yokohama's population of 3.7 million makes it Japan's largest city after the Spe
 					<li>Chankonabe</li>
 					<img src="https://japancentre-images.freetls.fastly.net/recipes/pics/101/main/photo_Chanko-Nabe-Hot-Pot.JPG?1469572894" height= "275" width="300">
 					<div class="place_holder"></div>
-										<li>Nigiri-zushi</li>
+					<li>Nigiri-zushi</li>
 					<img src="https://img.grouponcdn.com/deal/hfefAup1zQWBE2K8sWURgS27xax/hf-846x508/v1/c700x420.jpg" height="210" width="350">
 					<div class="place_holder"></div>
 					<li>Ramen</li>
@@ -74,21 +81,10 @@ Yokohama's population of 3.7 million makes it Japan's largest city after the Spe
 					<li>Unagi</li>
 					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Unaju_by_naotakem_in_Yurakucho.jpg/220px-Unaju_by_naotakem_in_Yurakucho.jpg" height="165" width="220">
 					<div class="place_holder"></div>
-				<!--<a href="#demo" class="btn btn-info" data-toggle="collapse">Sashimi</a>
-					<div id="demo" class="collapse">
-						<img src="https://www.bbcgoodfood.com/sites/default/files/glossary/sashimi-resized.jpg" height="50" width="50">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</div>-->
-				</ul>
-			</div>
-		</div>
+  				</ul>
+  			</div>
 
-		<div class="col-4">
-			<i class="fa fa-university fa-2x fa-fw" aria-hidden="true"></i>
-			<a href="#demo2" class="btn btn-info" data-toggle="collapse">Landmarks</a>
-			<div id="demo2" class="collapse">
+  			<div id="landmarks" class="tab-pane fade">
 				<ul>
 					<li>Imperial Palace</li>
 					<img src="https://www.japan-guide.com/g2/3017_01.jpg" height="270" width="575">
@@ -112,7 +108,7 @@ Yokohama's population of 3.7 million makes it Japan's largest city after the Spe
 					<li>Hozomon</li>
 					<img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Hozomon_sensoji.jpg" height="384" width="512">
 					<div class="place_holder"></div>
-										<li>Meiji Jingu Shrine</li>
+					<li>Meiji Jingu Shrine</li>
 					<img src="http://www.broketourist.net/wp-content/gallery/meiji-shrine/meijishrine_02.jpg" height="225" width="400">
 					<div class="place_holder"></div>
 					<li>Chidorigafuchi</li>
@@ -121,8 +117,8 @@ Yokohama's population of 3.7 million makes it Japan's largest city after the Spe
 					<li>Shibuya Pedestrian Scramble</li>
 					<img src="https://www.gojapango.com/wp-content/uploads/2017/01/shibuya-crossing-923000_1920-640x427.jpg" height="214" width="320">
 				</ul>
-			</div>
-		</div>
+  			</div>
+  		</div>
 		
 	<!--<div class="media">
 			<div class="media-left">

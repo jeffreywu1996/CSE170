@@ -12,8 +12,11 @@
 	<!--bootstrap-->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<!--custom css-->
-	<!--<link href="css/style.css" rel="stylesheet" type="text/css"/>-->
-	<link href="css/style.css" rel="stylesheet" type="text/css">	
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link href="css/ply.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />	
 	<!--component-css-->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -37,16 +40,19 @@
 
 	<div class="container">
 		<div class="jumbotron">
-			<h1>Kyoto</h1>
+			<center><img src="http://www.telegraph.co.uk/content/dam/Travel/galleries/travel/picturegalleries/Around-the-world-in-Penguin-Classics/kyoto-japan_3211458a.jpg?imwidth=480"></center>
+			<center><h1>Kyoto</h1></center>
 			<p>Kyoto, once the capital of Japan, is a city on the island of Honshu. It's famous for its numerous classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines and traditional wooden houses. It’s also known for formal traditions such as kaiseki dining, consisting of multiple courses of precise dishes, and geisha, female entertainers often found in the Gion district.</p>
 		</div>
 
-		<div class="col-4">
-			<i class="fa fa-cutlery fa-2x fa-fw" aria-hidden="true"></i>
-			<a href="#demo1" class="btn btn-info" data-toggle="collapse">Food</a>
-			<div id="demo1" class="collapse">
-				<ul>
-										<li>Soba</li>
+		<ul class="nav nav-pills">
+  			<li class="active"><a data-toggle="pill" href="#food">Food</a></li>
+ 			<li><a data-toggle="pill" href="#landmarks">Landmarks</a></li>
+		</ul>
+
+		<div class="tab-content">
+			<div id="food" class="tab-pane fade in active">
+				<li>Soba</li>
 					<img src="http://www.whats4eats.com/files/pastas-zaru-soba-flickr-kalleboo-Karl-Baron-9091388271-4x3.jpg" height="300" width="400">
 					<div class="place_holder"></div>
 					<li>Sukiyaki</li>
@@ -72,27 +78,14 @@
 					<div class="place_holder"></div>
 					<li>Tsukudani</li>
 					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Tsukudaniphoto.jpg/1200px-Tsukudaniphoto.jpg" height="200" width="400">
-					<div class="place_holder"></div>
-				<!--<a href="#demo" class="btn btn-info" data-toggle="collapse">Sashimi</a>
-					<div id="demo" class="collapse">
-						<img src="https://www.bbcgoodfood.com/sites/default/files/glossary/sashimi-resized.jpg" height="50" width="50">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</div>-->
-				</ul>
 			</div>
-		</div>
 
-		<div class="col-4">
-			<i class="fa fa-university fa-2x fa-fw" aria-hidden="true"></i>
-			<a href="#demo2" class="btn btn-info" data-toggle="collapse">Landmarks</a>
-			<div id="demo2" class="collapse">
+			<div id="landmarks" class="tab-pane fade">
 				<ul>
-										<li>Omoide Yokocho</li>
+					<li>Omoide Yokocho</li>
 					<img src="http://www.kuukiyomenai.com/attachments/Image/omoide_1.jpg?template=generic" height="350" width="480">
 					<div class="place_holder"></div>
-										<li>Imperial Palace</li>
+					<li>Imperial Palace</li>
 					<img src="https://www.japan-guide.com/g2/3017_01.jpg" height="270" width="575">
 					<div class="place_holder"></div>
 					<li>Meiji Jingu Shrine</li>
@@ -116,11 +109,9 @@
 					<li>Hozomon</li>
 					<img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Hozomon_sensoji.jpg" height="384" width="512">
 					<div class="place_holder"></div>
-															<li>Tokyo Skytree East Tower</li>
+					<li>Tokyo Skytree East Tower</li>
 					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Tokyo_Skytree_2014_%E2%85%A2.jpg/240px-Tokyo_Skytree_2014_%E2%85%A2.jpg" height="362" width="240">
-					<div class="place_holder"></div>
 				</ul>
-			</div>
 		</div>
 		
 	<!--<div class="media">
