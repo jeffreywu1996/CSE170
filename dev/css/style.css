@@ -355,6 +355,25 @@ ul.social li {
 }
 
 
+/*media page*/
+
+.box {
+    padding: 40px 40px 40px 40px;
+}
+
+.media-heading {
+    padding-bottom: 5px;
+}
+
+.media-body {
+    padding-left: 40px;
+}
+
+.media-object {
+    width: 400px;
+}
+
+
 /*
 @media(max-width:736px){
   .banner_search {
