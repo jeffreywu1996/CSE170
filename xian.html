@@ -48,14 +48,14 @@
 
     <div class="container">
         <div class="jumbotron">
-            <center><img src="https://media.timeout.com/images/103941355/image.jpg" class="city-image"></center>
+            <center><img src="https://2734010d30fe28f1377e-f5c92a08cf7f7c34a5c444e0604e46a9.ssl.cf1.rackcdn.com/30/1/large.jpg" class="city-image"></center>
             <center>
-                <h1 style="padding-top: 10px">Tokyo</h1></center>
-            <p>Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater (in the Edo-Tokyo Museum).</p>
+                <h1 style="padding-top: 10px">Xi'An</h1></center>
+            <p>Xi’an is a large city and capital of Shaanxi Province in central China. Once known as Chang’an (Eternal Peace), it marks the Silk Road’s eastern end and was home to the Zhou, Qin, Han and Tang dynasties' ruling houses. At archaeological sites in Xi’an’s surrounding plains are the famed Bingmayong (Terra Cotta Army), thousands of life-size, hand-molded figures buried with China’s first emperor, Qin Shi Huang.</p>
             <center>
                 <div class="text-center" style="padding-top: 20px; padding-bottom: 10px">
                     <form action="list.html" method="get">
-                        <input type="submit" value="Add to Cart" id="add_tokyo1" />
+                        <input type="submit" value="Add to Cart" id="add_xian1" />
                     </form>
                 </div>
             </center>
@@ -299,7 +299,7 @@
     <!--passing data along from city page-->
     <div class="text-center" style="padding-top: 20px; padding-bottom: 30px">
         <form action="list.html" method="get">
-            <input type="submit" value="Add to Cart" id="add_tokyo2" />
+            <input type="submit" value="Add to Cart" id="add_xian2" />
         </form>
     </div>
 
@@ -313,13 +313,14 @@
         list = JSON.parse(localStorage.JSON);
     }
 
-    document.getElementById("add_tokyo1").onclick = function() {
-        appendList("Tokyo");
+    document.getElementById("add_xian1").onclick = function() {
+        appendList("Xi'an");
     };
 
-    document.getElementById("add_tokyo2").onclick = function() {
-        appendList("Tokyo");
+    document.getElementById("add_xian2").onclick = function() {
+        appendList("Xi'an");
     };
+
     // document.getElementById("add_tokyo").onclick = function(){
     //     console.log("Tokyo");
     //     list.push("Tokyo");

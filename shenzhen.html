@@ -48,14 +48,14 @@
 
     <div class="container">
         <div class="jumbotron">
-            <center><img src="https://media.timeout.com/images/103941355/image.jpg" class="city-image"></center>
+            <center><img src="https://lonelyplanetimages.imgix.net/mastheads/465135294_super.jpg?sharp=10&vib=20&w=1200" class="city-image"></center>
             <center>
-                <h1 style="padding-top: 10px">Tokyo</h1></center>
-            <p>Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater (in the Edo-Tokyo Museum).</p>
+                <h1 style="padding-top: 10px">Shenzhen</h1></center>
+            <p>Shenzhen, in southeastern China, is a modern metropolis that links Hong Kong to China’s mainland. It's known for its shopping destinations, including Luohu Commercial City, a massive mall with a vast array of wares, from tailors’ custom clothing to faux designer bags. The city also features contemporary buildings, such as the 600m-tall skyscraper Ping An International Finance Centre, and a number of amusement parks.</p>
             <center>
                 <div class="text-center" style="padding-top: 20px; padding-bottom: 10px">
                     <form action="list.html" method="get">
-                        <input type="submit" value="Add to Cart" id="add_tokyo1" />
+                        <input type="submit" value="Add to Cart" id="add_shenzhen1" />
                     </form>
                 </div>
             </center>
@@ -299,7 +299,7 @@
     <!--passing data along from city page-->
     <div class="text-center" style="padding-top: 20px; padding-bottom: 30px">
         <form action="list.html" method="get">
-            <input type="submit" value="Add to Cart" id="add_tokyo2" />
+            <input type="submit" value="Add to Cart" id="add_shenzhen2" />
         </form>
     </div>
 
@@ -313,13 +313,14 @@
         list = JSON.parse(localStorage.JSON);
     }
 
-    document.getElementById("add_tokyo1").onclick = function() {
-        appendList("Tokyo");
+    document.getElementById("add_shenzhen1").onclick = function() {
+        appendList("Shenzhen");
     };
 
-    document.getElementById("add_tokyo2").onclick = function() {
-        appendList("Tokyo");
+    document.getElementById("add_shenzhen2").onclick = function() {
+        appendList("Shenzhen");
     };
+
     // document.getElementById("add_tokyo").onclick = function(){
     //     console.log("Tokyo");
     //     list.push("Tokyo");

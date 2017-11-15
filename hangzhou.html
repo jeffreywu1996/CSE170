@@ -48,14 +48,14 @@
 
     <div class="container">
         <div class="jumbotron">
-            <center><img src="https://media.timeout.com/images/103941355/image.jpg" class="city-image"></center>
+            <center><img src="http://s3-us-west-2.amazonaws.com/tvly-caps-inspire-bucket/inspire/wp-content/uploads/rsinspire/20160806134014/residence-of-Hu-Xueyan-in-Hangzhou.jpg" class="city-image"></center>
             <center>
-                <h1 style="padding-top: 10px">Tokyo</h1></center>
-            <p>Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater (in the Edo-Tokyo Museum).</p>
+                <h1 style="padding-top: 10px">Hangzhou</h1></center>
+            <p>Hangzhou, the capital of China’s Zhejiang province, is the southern terminus of the ancient Grand Canal waterway, which originates in Beijing. Its West Lake, celebrated by poets and artists since the 9th century, encompasses islands (reachable by boat), temples, pavilions, gardens and arched bridges. On its south bank is 5-story Leifeng Pagoda, a modern reconstruction of a structure built in 975 A.D.</p>
             <center>
                 <div class="text-center" style="padding-top: 20px; padding-bottom: 10px">
                     <form action="list.html" method="get">
-                        <input type="submit" value="Add to Cart" id="add_tokyo1" />
+                        <input type="submit" value="Add to Cart" id="add_hangzhou1" />
                     </form>
                 </div>
             </center>
@@ -299,7 +299,7 @@
     <!--passing data along from city page-->
     <div class="text-center" style="padding-top: 20px; padding-bottom: 30px">
         <form action="list.html" method="get">
-            <input type="submit" value="Add to Cart" id="add_tokyo2" />
+            <input type="submit" value="Add to Cart" id="add_hangzhou2" />
         </form>
     </div>
 
@@ -313,12 +313,12 @@
         list = JSON.parse(localStorage.JSON);
     }
 
-    document.getElementById("add_tokyo1").onclick = function() {
-        appendList("Tokyo");
+    document.getElementById("add_hangzhou1").onclick = function() {
+        appendList("Hangzhou");
     };
 
-    document.getElementById("add_tokyo2").onclick = function() {
-        appendList("Tokyo");
+    document.getElementById("add_hangzhou2").onclick = function() {
+        appendList("Hangzhou");
     };
     // document.getElementById("add_tokyo").onclick = function(){
     //     console.log("Tokyo");

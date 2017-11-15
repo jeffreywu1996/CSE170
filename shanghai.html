@@ -48,14 +48,14 @@
 
     <div class="container">
         <div class="jumbotron">
-            <center><img src="https://media.timeout.com/images/103941355/image.jpg" class="city-image"></center>
+            <center><img src="http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1446136805/shanghai-dg1015.jpg?itok=Rfe-AxAY" class="city-image"></center>
             <center>
-                <h1 style="padding-top: 10px">Tokyo</h1></center>
-            <p>Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater (in the Edo-Tokyo Museum).</p>
+                <h1 style="padding-top: 10px">Shanghai</h1></center>
+            <p>Shanghai, on China’s central coast, is the country's biggest city and a global financial hub. Its heart is the Bund, a famed waterfront promenade lined with colonial-era buildings. Across the Huangpu River rises the Pudong district’s futuristic skyline, including 632m Shanghai Tower and the Oriental Pearl TV Tower, with distinctive pink spheres. Sprawling Yu Garden has traditional pavilions, towers and ponds.</p>
             <center>
                 <div class="text-center" style="padding-top: 20px; padding-bottom: 10px">
                     <form action="list.html" method="get">
-                        <input type="submit" value="Add to Cart" id="add_tokyo1" />
+                        <input type="submit" value="Add to Cart" id="add_shanghai1" />
                     </form>
                 </div>
             </center>
@@ -299,7 +299,7 @@
     <!--passing data along from city page-->
     <div class="text-center" style="padding-top: 20px; padding-bottom: 30px">
         <form action="list.html" method="get">
-            <input type="submit" value="Add to Cart" id="add_tokyo2" />
+            <input type="submit" value="Add to Cart" id="add_shanghai2" />
         </form>
     </div>
 
@@ -313,12 +313,12 @@
         list = JSON.parse(localStorage.JSON);
     }
 
-    document.getElementById("add_tokyo1").onclick = function() {
-        appendList("Tokyo");
+    document.getElementById("add_shanghai1").onclick = function() {
+        appendList("Shanghai");
     };
 
-    document.getElementById("add_tokyo2").onclick = function() {
-        appendList("Tokyo");
+    document.getElementById("add_shanghai2").onclick = function() {
+        appendList("Shanghai");
     };
     // document.getElementById("add_tokyo").onclick = function(){
     //     console.log("Tokyo");

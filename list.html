@@ -9,15 +9,25 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!--font-awsome-css-->
-    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!--custom css-->
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="css/plannerEditable.css" rel="stylesheet" type="text/css"/>
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/plannerEditable.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/datepicker.js"></script>
+    <script src="js/i18n/datepicker.en.js"></script>
 
     <!--draggable stuff-->
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -29,129 +39,171 @@
 <body>
     <!--top icons bar-->
     <div class="menu-notify">
-    <div class="profile-left">
-        <a href="javascript:history.back();"><i class="fa fa-chevron-left"></i></a>
+        <div class="profile-left">
+            <a href="javascript:history.back();"><i class="fa fa-chevron-left"></i></a>
+        </div>
+        <div class="profile-mid">
+            <a href="index.html"> <i class="fa fa-home"></i></a>
+        </div>
+        <div class="profile-right">
+            <a href="list.html"> <i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <div class="clearfix"></div>
     </div>
-    <div class="profile-mid">
-        <a href="index.html"> <i class="fa fa-home"></i></a>
-    </div>
-    <div class="profile-right">
-        <a href="list.html"> <i class="fa fa-shopping-cart"></i></a>
-    </div>
-    <div class="clearfix"></div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <h1 class="title">Quacker</h1>
+        </div>
+        <!-- <img class="logo-image" src="images/japan_banner.png" alt=" "> -->
     </div>
 
     <!-- logo -->
-    <div class="details-right">
-        <img src="images/logo.png" alt=" ">
-    </div>
-
     <div class="container">
         <div class="jumbotron">
-            <h1>Planner</h1>
+            <h1>Trip Planner</h1>
             <p>Drag and drop schedules below to plan your trip!</p>
-    </div>
+        </div>
 
-<!--draggable list-->
-    <div data-force="5" class="layer title title_xl">Current List of Destinations</div>
-        <div style="margin-top: -8px; margin-left: 10px" class="block__list block__list_words">
-            <ul id="editable">
-<!--                 <li id="id1">Tokyo<i class="js-remove">✖</i></li>
+        <!--draggable list-->
+        <div id="draggable-well" class="col-md-6 col-md-offset-2 well">
+            <div data-force="5" class="layer title title_xl">Current List of Destinations</div>
+            <br></br>
+            <!-- <div style="margin-top: -8px; margin-left: 10px" class="block__list block__list_words"> -->
+            <div class="block__list block__list_words">
+                <ul id="editable">
+                    <!--                 <li id="id1">Tokyo<i class="js-remove">✖</i></li>
+
                 <li id="id2">Osaka<i class="js-remove">✖</i></li>
                 <li id="id3">Kyoto<i class="js-remove">✖</i></li>
                 <li id="id4">Kobe<i class="js-remove">✖</i></li>
                 <li id="id5">Nagoya<i class="js-remove">✖</i></li>
- -->            
-            </ul>
+ -->
+                </ul>
+            </div>
+            <div class="help-div">
+                <span data-toggle="collapse" data-target="#help-drag" class="glyphicon glyphicon-question-sign"></span>
+                <p id="help-drag" class="collapse description-small">Drag the cities above to change the order you want your trip to be.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="padding-left: 50px; padding-top: 20px">
+            <p>Plan the date of your trip
+            </p>
+
+            <span class="glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
+            <input type="text" data-range="true" data-multiple-dates-separator=" - " data-language="en" class="datepicker-here" />
+
+
+            <span data-toggle="collapse" data-target="#help-date" class="glyphicon glyphicon-question-sign"></span>
+            <p id="help-date" class="collapse description-small">Click the start and end date of your trip on the calendar.</p>
+        </div>
+        <div class="col-md-4" style="padding-top: 40px; padding-left: 50px">
+            <p>Check below if it applies</p>
+            <div class="[ form-group ]">
+                <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default" autocomplete="off" />
+                <div class="[ btn-group ]">
+                    <label for="fancy-checkbox-default" class="[ btn btn-default ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                    <label for="fancy-checkbox-default" class="[ btn btn-default active ]">
+                        Wheel Chair Friendly
+                    </label>
+                </div>
+            </div>
+
+            <div class="[ form-group ]">
+                <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-primary" autocomplete="off" />
+                <div class="[ btn-group ]">
+                    <label for="fancy-checkbox-primary" class="[ btn btn-default ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                    <label for="fancy-checkbox-primary" class="[ btn btn-default active ]">
+                        Less Walking
+                    </label>
+                </div>
+            </div>
+
+            <div class="[ form-group ]">
+                <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-trees" autocomplete="off" />
+                <div class="[ btn-group ]">
+                    <label for="fancy-checkbox-trees" class="[ btn btn-default ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                    <label for="fancy-checkbox-trees" class="[ btn btn-default active ]">
+                        I like Trees.
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row" style="padding-top: 20px; padding-bottom: 40px">
+        <div class="col-md-4 col-md-offset-2">
+            <a href="destination.html" type="button" class="btn btn-default" id="back_to_dest_btn">Add more cities to my planner</a>
         </div>
     </div>
 
     <script>
-        var list;
-        console.log("check JSON undef");
-        if (localStorage.JSON === undefined) {
-            console.log("JSON undefined");
-            list = [];
-        } else {
-            list = JSON.parse(localStorage.JSON);
-        }
-        // document.getElementById("add_tokyo").onclick = function(){console.log("click");
-        //     list.push("Tokyo");
-        // };
-        // list.push("Tokyo");
-        // document.getElementById("id1").innerHTML = localStorage.cart1;
-        // document.getElementById("id2").innerHTML = localStorage.cart2;
-        // document.getElementById("id3").innerHTML = localStorage.cart3;
-        // document.getElementById("id4").innerHTML = localStorage.cart4;
-        // document.getElementById("id5").innerHTML = localStorage.cart5;
-        for(var i = 0; i < list.length; i++){
-            $('#editable').append(
-                '<li id="id'+ i +'">' + list[i] + '<i class="js-remove" id="' + list[i] +'">✖</i></li>'
-            )
-        }
+    var list;
+    console.log("check JSON undef");
+    if (localStorage.JSON === undefined) {
+        console.log("JSON undefined");
+        list = [];
+    } else {
+        list = JSON.parse(localStorage.JSON);
+    }
+    // document.getElementById("add_tokyo").onclick = function(){console.log("click");
+    //     list.push("Tokyo");
+    // };
+    // list.push("Tokyo");
+    // document.getElementById("id1").innerHTML = localStorage.cart1;
+    // document.getElementById("id2").innerHTML = localStorage.cart2;
+    for (var i = 0; i < list.length; i++) {
+        $('#editable').append(
+            '<li id="id' + i + '">' + list[i] + '<i class="js-remove" id="' + list[i] + '">✖</i></li>'
+        )
+    }
 
-        $('#id1').onclick = function(){
-            console.log("delsssste");
-            console.log(this.id);
-        };
+    $('#id1').onclick = function() {
+        console.log("delsssste");
+        console.log(this.id);
+    };
 
-        $('.js-remove').onclick = function(){
-            console.log("delte");
-            console.log(this.id);
-        };
+    $('.js-remove').onclick = function() {
+        console.log("delte");
+        console.log(this.id);
+    };
     </script>
 
     <!--print button-->
-    <div class = "text-center">
-        <form action="index.html" method="get">
-            <span id="ready_to_travel">Ready to travel?</span>
-            <button type="button" class="btn btn-outline-primary btn-lg" id="print_btn" onclick="printPage()">Print Now</button>
-        </form>
+    <div class="row" style="padding-top: 40px">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <p id="ready_to_travel" style="padding-bottom: 5px">Ready to travel?</p>
+            <form action="index.html" method="get">
+                <button type="button" class="btn btn-outline-primary btn-lg" id="print_btn" onclick="printPage()">Print Now</button>
+            </form>
+        </div>
     </div>
-    
+
     <div class="place_holder"></div>
 
     <!--print button function-->
     <script>
-        function printPage() {
-            window.print();
-        }
+    function printPage() {
+        var win = window.open('');
+        win.document.write('<img src="images/printpage.png" onload="window.print();window.close()" />');
+        win.focus();
+    }
     </script>
 
-    <!--/footer-->
-    <div class="w3agile agileinfo_copy_right">
-        <div class="agileinfo_copy_right_left">
-            <p>© 2017 Quacker. All rights reserved | Designed by <a href="http://courses.pgbovine.net/cogs120-cse170/">CDJL</a></p>
-        </div>
-        
-        <div class="agileinfo_copy_right_right">
-            <ul class="social">
-                <li><a class="social-linkedin" href="#">
-                    <i></i>
-                    <div class="tooltip"><span>Facebook</span></div>
-                    </a></li>
-                <li><a class="social-twitter" href="#">
-                    <i></i>
-                    <div class="tooltip"><span>Twitter</span></div>
-                    </a></li>
-                <li><a class="social-google" href="#">
-                    <i></i>
-                    <div class="tooltip"><span>Google+</span></div>
-                    </a></li>
-                <li><a class="social-facebook" href="#">
-                    <i></i>
-                    <div class="tooltip"><span>Pinterest</span></div>
-                    </a></li>
-                <li><a class="social-instagram" href="#">
-                    <i></i>
-                    <div class="tooltip"><span>Instagram</span></div>
-                    </a></li>
-            </ul>
-        </div>
-        <div class="clearfix"> </div>
-    </div>
-
-<script src="https://rubaxa.github.io/Sortable/Sortable.js"></script>
-<script src="js/plannerEditable.js"></script>
+    <script src="https://rubaxa.github.io/Sortable/Sortable.js"></script>
+    <script src="js/plannerEditable.js"></script>
+    <script src="js/ply.js"></script>
 </body>
+
 </html>

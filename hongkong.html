@@ -48,14 +48,14 @@
 
     <div class="container">
         <div class="jumbotron">
-            <center><img src="https://media.timeout.com/images/103941355/image.jpg" class="city-image"></center>
+            <center><img src="http://chinafilminsider.com/wp-content/uploads/2017/06/HK_002_large.jpg" class="city-image"></center>
             <center>
-                <h1 style="padding-top: 10px">Tokyo</h1></center>
-            <p>Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater (in the Edo-Tokyo Museum).</p>
+                <h1 style="padding-top: 10px">Hong Kong</h1></center>
+            <p>Hong Kong is an autonomous territory, and former British colony, in southeastern China. Its vibrant, densely populated urban centre is a major port and global financial hub with a skyscraper-studded skyline. Central (the business district) features architectural landmarks like I.M. Pei’s Bank of China Tower. Hong Kong is also a major shopping destination, famed for bespoke tailors and Temple Street Night Market.</p>
             <center>
                 <div class="text-center" style="padding-top: 20px; padding-bottom: 10px">
                     <form action="list.html" method="get">
-                        <input type="submit" value="Add to Cart" id="add_tokyo1" />
+                        <input type="submit" value="Add to Cart" id="add_hongkong1" />
                     </form>
                 </div>
             </center>
@@ -299,7 +299,7 @@
     <!--passing data along from city page-->
     <div class="text-center" style="padding-top: 20px; padding-bottom: 30px">
         <form action="list.html" method="get">
-            <input type="submit" value="Add to Cart" id="add_tokyo2" />
+            <input type="submit" value="Add to Cart" id="add_hongkong2" />
         </form>
     </div>
 
@@ -313,12 +313,12 @@
         list = JSON.parse(localStorage.JSON);
     }
 
-    document.getElementById("add_tokyo1").onclick = function() {
-        appendList("Tokyo");
+    document.getElementById("add_hongkong1").onclick = function() {
+        appendList("Hong Kong");
     };
 
-    document.getElementById("add_tokyo2").onclick = function() {
-        appendList("Tokyo");
+    document.getElementById("add_hongkong2").onclick = function() {
+        appendList("Hong Kong");
     };
     // document.getElementById("add_tokyo").onclick = function(){
     //     console.log("Tokyo");
