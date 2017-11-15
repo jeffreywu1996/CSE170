@@ -12,8 +12,11 @@
 	<!--bootstrap-->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<!--custom css-->
-	<!--<link href="css/style.css" rel="stylesheet" type="text/css"/>-->
-	<link href="css/style.css" rel="stylesheet" type="text/css">	
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link href="css/ply.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
 	<!--component-css-->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -37,24 +40,28 @@
 
 	<div class="container">
 		<div class="jumbotron">
-			<h1>Osaka</h1>
+			<center><img src="https://www.jtbgenesis.com/pic/tour/141231osakajo0000184215.jpg" height="353" width = "450"></center>
+			<center><h1>Osaka</h1></center>
 			<p>Osaka is a large port city and commercial center on the Japanese island of Honshu. It's known for its modern architecture, nightlife and hearty street food. The 16th-century shogunate Osaka Castle, which has undergone several restorations, is its main historical landmark. It's surrounded by a moat and park with plum, peach and cherry-blossom trees. Sumiyoshi-taisha is among Japan’s oldest Shinto shrines.</p>
 		</div>
 
-		<div class="col-4">
-			<i class="fa fa-cutlery fa-2x fa-fw" aria-hidden="true"></i>
-			<a href="#demo1" class="btn btn-info" data-toggle="collapse">Food</a>
-			<div id="demo1" class="collapse">
-				<ul>
-										<li>Tsukudani</li>
+		<ul class="nav nav-pills">
+  			<li class="active"><a data-toggle="pill" href="#food">Food</a></li>
+ 			<li><a data-toggle="pill" href="#landmarks">Landmarks</a></li>
+		</ul>
+
+		<div class="tab-content">
+  			<div id="food" class="tab-pane fade in active">
+  				<ul>
+  					<li>Tsukudani</li>
 					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Tsukudaniphoto.jpg/1200px-Tsukudaniphoto.jpg" height="200" width="400">
 					<div class="place_holder"></div>
-										<li>Chankonabe</li>
+					<li>Chankonabe</li>
 					<img src="https://japancentre-images.freetls.fastly.net/recipes/pics/101/main/photo_Chanko-Nabe-Hot-Pot.JPG?1469572894" height= "275" width="300">
 					<div class="place_holder"></div>
 					<li>Okonomiyaki</li>
 					<img src="https://www.justonecookbook.com/wp-content/uploads/2011/03/Okonomiyaki-Teppan-600x600.jpg" height="300" width="300">
-										<li>Sukiyaki</li>
+					<li>Sukiyaki</li>
 					<img src="https://www.justonecookbook.com/wp-content/uploads/2015/02/Sukiyaki.jpg" height="200" width="300">
 					<div class="place_holder"></div>
 					<div class="place_holder"></div>
@@ -72,25 +79,12 @@
 					<div class="place_holder"></div>
 					<li>Soba</li>
 					<img src="http://www.whats4eats.com/files/pastas-zaru-soba-flickr-kalleboo-Karl-Baron-9091388271-4x3.jpg" height="300" width="400">
-					<div class="place_holder"></div>
+  				</ul>
+  			</div>
 
-				<!--<a href="#demo" class="btn btn-info" data-toggle="collapse">Sashimi</a>
-					<div id="demo" class="collapse">
-						<img src="https://www.bbcgoodfood.com/sites/default/files/glossary/sashimi-resized.jpg" height="50" width="50">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</div>-->
-				</ul>
-			</div>
-		</div>
-
-		<div class="col-4">
-			<i class="fa fa-university fa-2x fa-fw" aria-hidden="true"></i>
-			<a href="#demo2" class="btn btn-info" data-toggle="collapse">Landmarks</a>
-			<div id="demo2" class="collapse">
+  			<div id="landmarks" class="tab-pane fade">
 				<ul>
-										<li>Chidorigafuchi</li>
+					<li>Chidorigafuchi</li>
 					<img src="https://media-cdn.tripadvisor.com/media/photo-s/03/aa/a1/b5/caption.jpg" height="309" width="550">
 					<div class="place_holder"></div>
 					<li>Shibuya Pedestrian Scramble</li>
@@ -122,7 +116,7 @@
 					<div class="place_holder"></div>
 				</ul>
 			</div>
-		</div>
+  		</div>
 		
 	<!--<div class="media">
 			<div class="media-left">
