@@ -25,19 +25,6 @@
     <!--component-css-->
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109897677-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-109897677-1');
-    </script>
-
 </head>
 
 <body>
@@ -72,7 +59,7 @@
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Enter a country..." id="search_bar">
+                    <input type="text" class="form-control" placeholder="Enter a country..." id="search_bar" onkeydown="key_down()">
                     <span class="input-group-btn">
                     <a class="btn btn-default" type="button" onclick="sendToPage();">Go!</a>
                   </span>
@@ -82,14 +69,13 @@
     </div>
 
     <script>
-    $(document).keypress(function(e) {
-        if (e.which === 13) {
-            // enter has been pressed, execute a click on .js-new:
-            // $(".js-new").first().click();
-            console.log("Enter");
-            sendToPage();
+        function key_down(e)
+        {
+            if(e.keyCode == '13')
+            {
+                sendToPage();
+            }
         }
-    });
     </script>
 
     <script type="text/javascript">
