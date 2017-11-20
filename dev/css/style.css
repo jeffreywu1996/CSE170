@@ -249,7 +249,7 @@ h3.w3ls-title {
 }
 
 /*footer bar*/
-
+/*
 .agileinfo_copy_right {
     background: #a5adb0;
     padding: 1.5em 2em 0.4em 2em;
@@ -427,8 +427,6 @@ ul.social li {
     width: 600px;
 }
 
-
-/*
 @media(max-width:736px){
   .banner_search {
     border: 2px solid #fff;
