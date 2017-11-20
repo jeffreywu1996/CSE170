@@ -89,7 +89,7 @@
         </div>
 
         <div class="col-md-4" style="padding-left: 50px; padding-top: 20px">
-            <p>Plan the date of your trip
+            <p>Select the length of your stay below
             </p>
 
             <span class="glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span>
@@ -185,7 +185,7 @@
         <div class="col-md-4 col-md-offset-4 text-center">
             <p id="ready_to_travel" style="padding-bottom: 5px">Ready to travel?</p>
             <form action="index.html" method="get">
-                <button type="button" class="btn btn-outline-primary btn-lg" id="print_btn" onclick="printPage()">Print Now</button>
+                <button type="button" class="btn btn-outline-primary btn-lg" id="print_btn" onclick="printPage()">Plan Trip Now</button>
             </form>
         </div>
     </div>
@@ -196,7 +196,8 @@
     <script>
     function printPage() {
         var win = window.open('');
-        win.document.write('<img src="images/printpage.png" onload="window.print();window.close()" />');
+        // win.document.write('<img src="images/printpage.png" onload="window.print();window.close()" />');
+        win.document.write('<img src="images/printpage.png"//>');
         win.focus();
     }
     </script>

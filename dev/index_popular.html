@@ -25,6 +25,7 @@
     <!--component-css-->
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109897677-1"></script>
@@ -33,6 +34,7 @@
 
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
+
     gtag('config', 'UA-109897677-1');
     </script>
 
@@ -95,12 +97,11 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="col-md-8 col-md-offset-2 text-center">
                 <h1 class="title">Quacker</h1>
+                <h3 class="title" style="font-size: 19px; margin-top: 0px;">Traveling Planning Made Easy</h3>
                 <img class="logo-image" src="images/logo.png" alt=" ">
-            </div>
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <p>Give us a country and we will show you a variety of attractions to visit!</p>
+                <!-- <img class="logo-image" src="http://www.pvhc.net/img242/lofxaebjghjlfimtkuuw.jpg" alt=" "> -->
             </div>
         </div>
 
@@ -115,7 +116,66 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-8 col-md-offset-2 text-center" style="padding-top: 5px">
+            <p style="font-size: 14px">Enter a country to explore the cities</p>
+        </div>
     </div>
+    <div class="place50"></div>
+
+    <div id="portfolio" class="portfolio w3agile">
+        <div class="container">
+            <div class="place50"></div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h1 style="font-weight: 300">Popular places</h1>
+                </div>
+            </div>
+            <div class="gallery_gds">
+                <div class="filtr-container">
+                    <ul class="col-md-4 filtr-item grid cs-style-1" data-category="2, 3">
+                        <li>
+                            <figure>
+                                <img src="images/d2_dark.png" alt="img01">
+                                <figcaption>
+                                    <h3>Kyoto</h3>
+                                    <span>Old Capital of Japan</span>
+                                    <a href="kyoto.html">Learn more</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+
+                    <ul class="col-md-4 filtr-item grid cs-style-1" data-category="1, 4">
+                        <li>
+                            <figure>
+                                <img src="images/d3.png" alt="img01">
+                                <figcaption>
+                                    <h3>Osaka</h3>
+                                    <span>City where Castle Osaka Stands</span>
+                                    <a href="osaka.html">Learn more</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+
+                    <ul class="col-md-4 filtr-item grid cs-style-1" data-category="2, 3">
+                        <li>
+                            <figure>
+                                <img src="images/d6.png" alt="img01">
+                                <figcaption>
+                                    <h3>Sapporo</h3>
+                                    <span>Beer, beer, and beer</span>
+                                    <a href="sapporo.html">Learn more</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <div class="clearfix "> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script>
     $(document).keypress(function(e) {
@@ -138,4 +198,9 @@
         }
     }
     </script>
+
+    <script src="js/toucheffects.js "></script>
+
 </body>
+
+</html>
