@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quacker: Travel Planning Made Easy</title>
+    <meta charset utf="8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+    function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!--font-awsome-css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--custom css-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+
+    <!--component-css-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109897677-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-109897677-1');
+    </script>
+
+
+    <!-- Google Analytics Content Experiment code -->
+    <script>
+    function utmx_section() {}
+
+    function utmx() {}(function() {
+        var
+            k = '164840970-1',
+            d = document,
+            l = d.location,
+            c = d.cookie;
+        if (l.search.indexOf('utm_expid=' + k) > 0) return;
+
+        function f(n) {
+            if (c) {
+                var i = c.indexOf(n + '=');
+                if (i > -1) {
+                    var j = c.
+                    indexOf(';', i);
+                    return escape(c.substring(i + n.length + 1, j < 0 ? c.length : j))
+                }
+            }
+        }
+        var x = f('__utmx'),
+            xx = f('__utmxx'),
+            h = l.hash;
+        d.write(
+            '<sc' + 'ript src="' + 'http' + (l.protocol == 'https:' ? 's://ssl' :
+                '://www') + '.google-analytics.com/ga_exp.js?' + 'utmxkey=' + k +
+            '&utmx=' + (x ? x : '') + '&utmxx=' + (xx ? xx : '') + '&utmxtime=' + new Date().valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
+            '" type="text/javascript" charset="utf-8"><\/sc' + 'ript>')
+    })();
+    </script>
+    <script>
+    utmx('url', 'A/B');
+    </script>
+    <!-- End of Google Analytics Content Experiment code -->
+
+
+</head>
+
+<body>
+    <!--top icons bar-->
+    <div class="menu-notify">
+        <div class="profile-left">
+            <a href="javascript:history.back();"><i class="fa fa-chevron-left"></i></a>
+        </div>
+        <div class="profile-mid">
+            <a href="index.html"> <i class="fa fa-home"></i></a>
+        </div>
+        <div class="profile-right">
+            <a href="list.html"> <i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <h1 class="title">Quacker</h1>
+                <img class="logo-image" src="images/logo.png" alt=" ">
+            </div>
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <p>Give us a country and we will show you a variety of attractions to visit!</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter a country..." id="search_bar">
+                    <span class="input-group-btn">
+                    <a class="btn btn-default" type="button" onclick="sendToPage();">Go!</a>
+                  </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    $(document).keypress(function(e) {
+        if (e.which === 13) {
+            console.log("Enter");
+            sendToPage();
+        }
+    })
+    </script>
+
+    <script type="text/javascript">
+    function sendToPage() {
+        var input = document.getElementById("search_bar").value;
+        if (input.toLowerCase() == "japan") {
+            location.href = "destination.html";
+        } else if (input.toLowerCase() == "china") {
+            location.href = "destination_china.html";
+        } else {
+            location.href = "destination_not_found.html";
+        }
+    }
+    </script>
+</body>
