@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quacker: Travel Planning Made Easy</title>
+    <meta charset utf="8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+    function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!--font-awsome-css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--custom css-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+
+    <!--component-css-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109897677-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109897677-1');
+    </script>
+</head>
+
+<body>
+    <!--top icons bar-->
+    <div class="menu-notify">
+        <div class="profile-left">
+            <a href="javascript:history.back();"><i class="fa fa-chevron-left"></i></a>
+        </div>
+        <div class="profile-mid">
+            <a href="index.html"> <i class="fa fa-home"></i></a>
+        </div>
+        <div class="profile-right">
+            <a href="list.html"> <i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h1 class="title">Quacker</h1>
+                <h3 class="title" style="font-size: 19px; margin-top: 0px;">Traveling Planning Made Easy</h3>
+                <img class="logo-image" src="images/logo.png" alt=" ">
+                <!-- <img class="logo-image" src="http://www.pvhc.net/img242/lofxaebjghjlfimtkuuw.jpg" alt=" "> -->
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter a country..." id="search_bar">
+                    <span class="input-group-btn">
+                    <a class="btn btn-default" type="button" onclick="sendToPage();">Go!</a>
+                  </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2 text-center" style="padding-top: 5px">
+            <p style="font-size: 14px">Enter a country to explore the cities</p>
+        </div>
+    </div>
+    <div class="place50"></div>
+
+    <div id="portfolio" class="portfolio w3agile">
+        <div class="container">
+            <div class="place50"></div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h1 style="font-weight: 300">Popular Places</h1>
+                </div>
+            </div>
+            <div class="gallery_gds">
+                <div class="filtr-container">
+                    <ul class="col-md-4 filtr-item grid cs-style-1" data-category="2, 3">
+                        <li>
+                            <figure>
+                                <img src="images/d2_dark.png" alt="img01">
+                                <figcaption>
+                                    <h3>Kyoto</h3>
+                                    <span>Old Capital of Japan</span>
+                                    <a href="kyoto.html">Learn more</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+
+                    <ul class="col-md-4 filtr-item grid cs-style-1" data-category="1, 4">
+                        <li>
+                            <figure>
+                                <img src="images/d3.png" alt="img01">
+                                <figcaption>
+                                    <h3>Osaka</h3>
+                                    <span>City where Castle Osaka Stands</span>
+                                    <a href="osaka.html">Learn more</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+
+                    <ul class="col-md-4 filtr-item grid cs-style-1" data-category="2, 3">
+                        <li>
+                            <figure>
+                                <img src="images/d6.png" alt="img01">
+                                <figcaption>
+                                    <h3>Sapporo</h3>
+                                    <span>Beer, beer, and beer</span>
+                                    <a href="sapporo.html">Learn more</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <div class="clearfix "> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    $(document).keypress(function(e) {
+        if (e.which === 13) {
+            console.log("Enter");
+            sendToPage();
+        }
+    })
+    </script>
+
+    <script type="text/javascript">
+    function sendToPage() {
+        var input = document.getElementById("search_bar").value;
+        if (input.toLowerCase() == "japan") {
+            location.href = "destination.html";
+        } else if (input.toLowerCase() == "china") {
+            location.href = "destination_china.html";
+        } else {
+            location.href = "destination_not_found.html";
+        }
+    }
+    </script>
+
+    <script src="js/toucheffects.js "></script>
+
+</body>
+
+</html>
