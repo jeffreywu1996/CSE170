@@ -82,6 +82,7 @@
         </div>
     </div>
     <div class="place50"></div>
+    <button id="testButton">Click register</button>
 
     <div id="portfolio" class="portfolio w3agile">
         <div class="container">
@@ -136,6 +137,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+    $("#testButton").click(function() {
+        console.log("button pressed");
+        ga('send', 'button', 'click');
+    })
+    </script>
 
 
     <script>
