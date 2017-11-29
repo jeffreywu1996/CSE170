@@ -37,44 +37,6 @@
     </script>
 
 
-    <!-- Google Analytics Content Experiment code -->
-    <script>
-    function utmx_section() {}
-
-    function utmx() {}(function() {
-        var
-            k = '164840970-1',
-            d = document,
-            l = d.location,
-            c = d.cookie;
-        if (l.search.indexOf('utm_expid=' + k) > 0) return;
-
-        function f(n) {
-            if (c) {
-                var i = c.indexOf(n + '=');
-                if (i > -1) {
-                    var j = c.
-                    indexOf(';', i);
-                    return escape(c.substring(i + n.length + 1, j < 0 ? c.length : j))
-                }
-            }
-        }
-        var x = f('__utmx'),
-            xx = f('__utmxx'),
-            h = l.hash;
-        d.write(
-            '<sc' + 'ript src="' + 'http' + (l.protocol == 'https:' ? 's://ssl' :
-                '://www') + '.google-analytics.com/ga_exp.js?' + 'utmxkey=' + k +
-            '&utmx=' + (x ? x : '') + '&utmxx=' + (xx ? xx : '') + '&utmxtime=' + new Date().valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
-            '" type="text/javascript" charset="utf-8"><\/sc' + 'ript>')
-    })();
-    </script>
-    <script>
-    utmx('url', 'A/B');
-    </script>
-    <!-- End of Google Analytics Content Experiment code -->
-
-
 </head>
 
 <body>
@@ -111,7 +73,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Enter a country..." id="search_bar">
                     <span class="input-group-btn">
-                    <a class="btn btn-default" type="button" onclick="sendToPage();">Go!</a>
+                    <a class="btn btn-default" type="button" id="search_button" onclick="sendToPage();">Go!</a>
                   </span>
                 </div>
             </div>
@@ -119,9 +81,19 @@
     </div>
 
     <script>
+    $("#search_button").click(function() {
+        console.log("Search used");
+        tracker = ga.getAll()[0];
+        tracker.send('event', 'button', 'click');
+    })
+    </script>
+
+    <script>
     $(document).keypress(function(e) {
         if (e.which === 13) {
             console.log("Enter");
+            tracker = ga.getAll()[0];
+            tracker.send('event', 'button', 'click');
             sendToPage();
         }
     })
