@@ -142,12 +142,12 @@
     $("#testButton").click(function() {
         console.log("button pressed");
         // ga('send', 'event', 'button', 'click');
-        ga('send', 'event', {
-            'eventCategory': 'Category',
-            'eventAction': 'Action'
-        });
-        // tracker = ga.getAll()[0];
-        // tracker.send('event', 'button', 'click');
+        // ga('send', 'event', {
+        //     'eventCategory': 'Category',
+        //     'eventAction': 'Action'
+        // });
+        tracker = ga.getAll()[0];
+        tracker.send('event', 'button', 'click');
     })
     </script>
 
