@@ -93,15 +93,16 @@
             </div>
             <div class="gallery_gds">
                 <div class="filtr-container">
+                    <!-- <ul class="col-md-4 filtr-item grid cs-style-1" data-category="2, 3"> -->
                     <ul class="col-md-4 filtr-item grid cs-style-1" data-category="2, 3">
                         <li>
                             <figure>
-                                <img src="images/d2_dark.png" alt="img01">
-                                <figcaption>
-                                    <h3>Kyoto</h3>
-                                    <span>Old Capital of Japan</span>
-                                    <a class="ab_button" href="kyoto.html">Learn more</a>
-                                </figcaption>
+                                <a class="ab_button" href="kyoto.html"><img src="images/d2_dark.png" alt="img01"></a>
+                                <!-- <figcaption>
+    <h3>Kyoto</h3>
+    <span>Old Capital of Japan</span>
+    <a href="kyoto.html">Learn more</a>
+</figcaption> -->
                             </figure>
                         </li>
                     </ul>
@@ -109,12 +110,13 @@
                     <ul class="col-md-4 filtr-item grid cs-style-1" data-category="1, 4">
                         <li>
                             <figure>
-                                <img src="images/d3.png" alt="img01">
-                                <figcaption>
+                                <a class="ab_button" href="osaka.html"><img src="images/d3.png" alt="img01"></a>
+                                <!--                                 <figcaption>
                                     <h3>Osaka</h3>
                                     <span>City where Castle Osaka Stands</span>
-                                    <a class="ab_button" href="osaka.html">Learn more</a>
+                                    <a href="osaka.html">Learn more</a>
                                 </figcaption>
+ -->
                             </figure>
                         </li>
                     </ul>
@@ -122,12 +124,12 @@
                     <ul class="col-md-4 filtr-item grid cs-style-1" data-category="2, 3">
                         <li>
                             <figure>
-                                <img src="images/d6.png" alt="img01">
-                                <figcaption>
-                                    <h3>Sapporo</h3>
-                                    <span>Beer, beer, and beer</span>
-                                    <a class="ab_button" href="sapporo.html">Learn more</a>
-                                </figcaption>
+                                <a class="ab_button" href="sapporo.html"><img src="images/d6.png" alt="img01"></a>
+                                <!-- <figcaption>
+    <h3>Sapporo</h3>
+    <span>Beer, beer, and beer</span>
+    <a href="sapporo.html">Learn more</a>
+</figcaption> -->
                             </figure>
                         </li>
                     </ul>
@@ -137,13 +139,14 @@
         </div>
     </div>
 
-    <!--  <script>
+    <!--     <script>
     $("#search_button").click(function() {
         console.log("Search used");
         tracker = ga.getAll()[0];
         tracker.send('event', 'button', 'click');
     })
-    </script> -->
+    </script>
+ -->
 
     <script>
     $(".ab_button").click(function() {
@@ -152,7 +155,6 @@
         tracker.send('event', 'ab_button', 'click');
     })
     </script>
-
 
     <script>
     $(document).keypress(function(e) {
@@ -178,7 +180,7 @@
     }
     </script>
 
-    <script src="js/toucheffects.js "></script>
+    <!-- <script src="js/toucheffects.js "></script> -->
 
 </body>
 
