@@ -54,7 +54,7 @@
 
     <div class="row">
         <div class="col-md-4 col-md-offset-4 text-center">
-            <h1 class="title">Duck Travel</h1>
+            <h1 class="title">DuckTravel</h1>
         </div>
         <!-- <img class="logo-image" src="images/japan_banner.png" alt=" "> -->
     </div>
@@ -67,20 +67,22 @@
         </div>
 
         <!--draggable list-->
-        <div id="draggable-well" class="col-md-6 col-md-offset-2 well">
+        <div id="draggable-well" class="col-md-8 well">
             <div data-force="5" class="layer title title_xl">Current List of Destinations</div>
             <br></br>
             <!-- <div style="margin-top: -8px; margin-left: 10px" class="block__list block__list_words"> -->
-            <div class="block__list block__list_words">
-                <ul id="editable">
-                    <!--                 <li id="id1">Tokyo<i class="js-remove">✖</i></li>
+            <div style="padding-left: 80px">
+                <div class="block__list block__list_words">
+                    <ul id="editable">
+                        <!--                 <li id="id1">Tokyo<i class="js-remove">✖</i></li>
 
                 <li id="id2">Osaka<i class="js-remove">✖</i></li>
                 <li id="id3">Kyoto<i class="js-remove">✖</i></li>
                 <li id="id4">Kobe<i class="js-remove">✖</i></li>
                 <li id="id5">Nagoya<i class="js-remove">✖</i></li>
  -->
-                </ul>
+                    </ul>
+                </div>
             </div>
             <div class="help-div">
                 <span data-toggle="collapse" data-target="#help-drag" class="glyphicon glyphicon-question-sign"></span>
@@ -88,7 +90,7 @@
             </div>
         </div>
 
-        <div class="col-md-4" style="padding-left: 50px; padding-top: 20px">
+        <div class="col-md-4" style="padding-left: 50px; padding-top: 40px">
             <p>Select the length of your stay below
             </p>
 
@@ -99,48 +101,55 @@
             <span data-toggle="collapse" data-target="#help-date" class="glyphicon glyphicon-question-sign"></span>
             <p id="help-date" class="collapse description-small">Click the start and end date of your trip on the calendar.</p>
         </div>
-        <div class="col-md-4" style="padding-top: 40px; padding-left: 50px">
-            <p>Check below if it applies</p>
-            <div class="[ form-group ]">
-                <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="fancy-checkbox-default" class="[ btn btn-default ]">
-                        <span class="[ glyphicon glyphicon-ok ]"></span>
-                        <span> </span>
-                    </label>
-                    <label for="fancy-checkbox-default" class="[ btn btn-default active ]">
-                        Wheel Chair Friendly
-                    </label>
-                </div>
-            </div>
 
-            <div class="[ form-group ]">
-                <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-primary" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="fancy-checkbox-primary" class="[ btn btn-default ]">
-                        <span class="[ glyphicon glyphicon-ok ]"></span>
-                        <span> </span>
-                    </label>
-                    <label for="fancy-checkbox-primary" class="[ btn btn-default active ]">
-                        Less Walking
-                    </label>
-                </div>
-            </div>
-
-            <div class="[ form-group ]">
-                <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-trees" autocomplete="off" />
-                <div class="[ btn-group ]">
-                    <label for="fancy-checkbox-trees" class="[ btn btn-default ]">
-                        <span class="[ glyphicon glyphicon-ok ]"></span>
-                        <span> </span>
-                    </label>
-                    <label for="fancy-checkbox-trees" class="[ btn btn-default active ]">
-                        I like Trees.
-                    </label>
-                </div>
-            </div>
+        <div class="col-md-4 text-center" style="padding-left: 0px; padding-top: 80px">
+            <p id="ready_to_travel" style="padding-bottom: 5px">Ready to travel?</p>
+            <form action="index.html" method="get">
+                <!-- <button type="button" class="btn btn-outline-primary btn-lg" id="print_btn" onclick="printPage()">Plan Trip Now</button> -->
+                <a href="destination.html" type="button" class="btn btn-default btn-lg" id="back_to_dest_btn">Plan Trip Now</a>
+            </form>
         </div>
+        <!-- <div class="col-md-4" style="padding-top: 40px; padding-left: 50px">
+    <p>Check below if it applies</p>
+    <div class="[ form-group ]">
+        <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default" autocomplete="off" />
+        <div class="[ btn-group ]">
+            <label for="fancy-checkbox-default" class="[ btn btn-default ]">
+                <span class="[ glyphicon glyphicon-ok ]"></span>
+                <span> </span>
+            </label>
+            <label for="fancy-checkbox-default" class="[ btn btn-default active ]">
+                Wheel Chair Friendly
+            </label>
+        </div>
+    </div>
 
+    <div class="[ form-group ]">
+        <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-primary" autocomplete="off" />
+        <div class="[ btn-group ]">
+            <label for="fancy-checkbox-primary" class="[ btn btn-default ]">
+                <span class="[ glyphicon glyphicon-ok ]"></span>
+                <span> </span>
+            </label>
+            <label for="fancy-checkbox-primary" class="[ btn btn-default active ]">
+                Less Walking
+            </label>
+        </div>
+    </div>
+
+    <div class="[ form-group ]">
+        <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-trees" autocomplete="off" />
+        <div class="[ btn-group ]">
+            <label for="fancy-checkbox-trees" class="[ btn btn-default ]">
+                <span class="[ glyphicon glyphicon-ok ]"></span>
+                <span> </span>
+            </label>
+            <label for="fancy-checkbox-trees" class="[ btn btn-default active ]">
+                I like Trees.
+            </label>
+        </div>
+    </div>
+</div> -->
     </div>
     <div class="row" style="padding-top: 20px; padding-bottom: 40px">
         <div class="col-md-4 col-md-offset-2">
@@ -181,14 +190,14 @@
     </script>
 
     <!--print button-->
-    <div class="row" style="padding-top: 40px">
-        <div class="col-md-4 col-md-offset-4 text-center">
-            <p id="ready_to_travel" style="padding-bottom: 5px">Ready to travel?</p>
-            <form action="index.html" method="get">
-                <button type="button" class="btn btn-outline-primary btn-lg" id="print_btn" onclick="printPage()">Plan Trip Now</button>
-            </form>
-        </div>
+    <!-- <div class="row" style="padding-top: 40px">
+    <div class="col-md-4 col-md-offset-4 text-center">
+        <p id="ready_to_travel" style="padding-bottom: 5px">Ready to travel?</p>
+        <form action="index.html" method="get">
+            <button type="button" class="btn btn-outline-primary btn-lg" id="print_btn" onclick="printPage()">Plan Trip Now</button>
+        </form>
     </div>
+</div> -->
 
     <div class="place_holder"></div>
 
