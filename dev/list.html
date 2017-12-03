@@ -106,7 +106,7 @@
             <p id="ready_to_travel" style="padding-bottom: 5px">Ready to travel?</p>
             <form action="index.html" method="get">
                 <!-- <button type="button" class="btn btn-outline-primary btn-lg" id="print_btn" onclick="printPage()">Plan Trip Now</button> -->
-                <a href="destination.html" type="button" class="btn btn-default btn-lg" id="back_to_dest_btn">Plan Trip Now</a>
+                <a type="button" class="btn btn-default btn-lg" id="back_to_dest_btn" onclick="printPage()">Plan Trip Now</a>
             </form>
         </div>
         <!-- <div class="col-md-4" style="padding-top: 40px; padding-left: 50px">
@@ -189,6 +189,22 @@
     };
     </script>
 
+    <script>
+    function printPage() {
+        var rand = Math.random();
+        console.log(rand);
+        var win = window.open('');
+        if (rand >= 0 && rand <= 0.33) {
+            win.document.write('<img src="images/trip1.png"//>');
+        } else if (rand <= 0.66) {
+            win.document.write('<img src="images/trip2.png"//>');
+        } else {
+            win.document.write('<img src="images/trip3.png"//>');
+        }
+        win.focus();
+    }
+    </script>
+
     <!--print button-->
     <!-- <div class="row" style="padding-top: 40px">
     <div class="col-md-4 col-md-offset-4 text-center">
@@ -203,12 +219,12 @@
 
     <!--print button function-->
     <script>
-    function printPage() {
-        var win = window.open('');
-        // win.document.write('<img src="images/printpage.png" onload="window.print();window.close()" />');
-        win.document.write('<img src="images/printpage.png"//>');
-        win.focus();
-    }
+    // function printPage() {
+    //     var win = window.open('');
+    //     // win.document.write('<img src="images/printpage.png" onload="window.print();window.close()" />');
+    //     win.document.write('<img src="images/printpage.png"//>');
+    //     win.focus();
+    // }
     </script>
 
     <script src="https://rubaxa.github.io/Sortable/Sortable.js"></script>
